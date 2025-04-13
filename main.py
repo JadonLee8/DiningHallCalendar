@@ -6,11 +6,17 @@ from pathlib import Path
 BASE_URL_SCHEME = "https://api.dineoncampus.com/v1/location/"
 SBISA_LOCATION_ID = "587909deee596f31cedc179c"
 COMMONS_LOCATION_ID = "59972586ee596fe55d2eef75"
+LOCATION_IDS = {"SBISA": SBISA_LOCATION_ID, "COMMONS": COMMONS_LOCATION_ID}
+LOCATION_NAMES = {SBISA_LOCATION_ID: "SBISA", COMMONS_LOCATION_ID: "COMMONS"}
 DATA_FILE = "dining_data.json"
 
 # FORMAT FOR DATA
 # {
 #     "YYYY-MM-DD": {
+#         "periods": {
+#             "period_name": "period_id",
+#             ...
+#         },
 #         "period_name": {
 #             "location_name": {
 #                 "category_name": {
@@ -88,7 +94,7 @@ def update_dining_data(location_id: str, start_date: str, days: int = 28):
             # Get menu for each period
             for period_name, period_id in periods.items():
                 menu = get_menu(location_id, date_str, period_id)
-                data[date_str][period_name] = menu
+                data[date_str][period_name][LOCATION_NAMES[location_id]] = menu
                 
             # Save after each successful date to prevent data loss
             save_data(data)
