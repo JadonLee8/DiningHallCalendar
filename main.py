@@ -1,34 +1,55 @@
 import cloudscraper
+import json
+from datetime import datetime, timedelta
+from pathlib import Path
 
 BASE_URL_SCHEME = "https://api.dineoncampus.com/v1/location/"
 SBISA_LOCATION_ID = "587909deee596f31cedc179c"
 COMMONS_LOCATION_ID = "59972586ee596fe55d2eef75"
-# headers = {
-#     'accept': 'application/json, text/plain, */*',
-#     'accept-language': 'en-US,en;q=0.9',
-#     'origin': 'https://dineoncampus.com',
-#     'priority': 'u=1, i',
-#     'referer': 'https://dineoncampus.com/',
-#     'sec-ch-ua': '"Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"',
-#     'sec-ch-ua-mobile': '?0',
-#     'sec-ch-ua-platform': '"Windows"',
-#     'sec-fetch-dest': 'empty',
-#     'sec-fetch-mode': 'cors',
-#     'sec-fetch-site': 'same-site',
-#     'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36',
-#     'cookie': 'cf_clearance=hxxprh3H1wR9Lfj4tTl6v_Yez6hIy6Zj5Gxvkx7x1dU-1744559421-1.2.1.1-rMJCJOhPkFU9CLKLu21s3WcUrIOgKc1b.2RDGSUnQqXwRlKlQVL5fP_IJVA9jOViup4D.Hl.DoVqaR9S0MG8ul0uu2QIoBRZ9qpQ4f_PMTyvJ3vL4_3349eOspZA3Wdf4AKU1ljv4Wp8zU8TyOVnofbR5sKIJ_GHoDAAzOviP4rgmalSdS55aXmGPL9YFauU3VpVUezdVYzSpLqbtmXJbsPRc68wCfIVNGFelswPwW7TEptsvBUXGpuwyM1bg40ElO_Ii84RqECs.LwUDA.zEE6Wg1XXW5roKq9ycM1.jw.JyI0w3zpUlkYAiz9WmX5v6Z.OPINwXXzS.lEKk4U_JiIDSg_nWb2XGpULCFVmeUo'  # You'll need to get this from your browser
+DATA_FILE = "dining_data.json"
+
+# FORMAT FOR DATA
+# {
+#     "YYYY-MM-DD": {
+#         "period_name": {
+#             "location_name": {
+#                 "category_name": {
+#                     "category_id": "category_id",
+#                     "items": [
+#                         {
+#                             "name": "item_name",
+#                             "id": "item_id"
+#                         },
+#                         ...
+#                     ]
+#                 },
+#                 ...
+#             }
+#             ...
+#         }
+#         ...
+#     },
+#     repeat for each day
 # }
 
-# date format: YYYY-MM-DD
-# if you don't provide a period_id, it will return the url for the default period as well as the period ids for the other periods
-# if you provide a period_id, it will return the url for that period
+def load_data() -> dict:
+    """Load existing data from file or return empty dict if file doesn't exist"""
+    if Path(DATA_FILE).exists():
+        with open(DATA_FILE, 'r') as f:
+            return json.load(f)
+    return {}
+
+def save_data(data: dict):
+    """Save data to file"""
+    with open(DATA_FILE, 'w') as f:
+        json.dump(data, f, indent=2)
+
 def get_url(location_id : str, date : str, period_id : str | None = None) -> str:
     if period_id:
         return f"{BASE_URL_SCHEME}{location_id}/periods/{period_id}?platform=0&date={date}"
     else:
         return f"{BASE_URL_SCHEME}{location_id}/periods?platform=0&date={date}"
 
-# returns a dict of period_name -> period_id
 def get_periods(location_id : str, date : str) -> dict[str, str]:
     url = get_url(location_id, date)
     print(f"Making request to: {url}")
@@ -44,14 +65,66 @@ def get_menu(location_id : str, date : str, period_id : str) -> list:
     response = scraper.get(url)
     return response.json()["menu"]["periods"]["categories"]
 
-if __name__ == "__main__":
-    periods = get_periods(SBISA_LOCATION_ID, "2025-04-14")
-    for period_name, period_id in periods.items():
-        menu = get_menu(SBISA_LOCATION_ID, "2025-04-14", period_id)
-        print(f"Period: {period_name}")
-        for category in menu:
+def update_dining_data(location_id: str, start_date: str, days: int = 28):
+    """Update dining data for the specified number of days starting from start_date"""
+    data = load_data()
+    
+    # Parse start date
+    current_date = datetime.strptime(start_date, "%Y-%m-%d")
+    
+    for _ in range(days):
+        date_str = current_date.strftime("%Y-%m-%d")
+        print(f"\nFetching data for {date_str}")
+        
+        # Initialize date entry if it doesn't exist
+        if date_str not in data:
+            data[date_str] = {}
+        
+        try:
+            # Get periods for the date
+            periods = get_periods(location_id, date_str)
+            data[date_str]["periods"] = periods
+            
+            # Get menu for each period
+            for period_name, period_id in periods.items():
+                menu = get_menu(location_id, date_str, period_id)
+                data[date_str][period_name] = menu
+                
+            # Save after each successful date to prevent data loss
+            save_data(data)
+            print(f"Successfully saved data for {date_str}")
+            
+        except Exception as e:
+            print(f"Error fetching data for {date_str}: {e}")
+        
+        # Move to next day
+        current_date += timedelta(days=1)
+
+def print_menu_for_date(date: str):
+    """Print menu for a specific date"""
+    data = load_data()
+    if date not in data:
+        print(f"No data available for {date}")
+        return
+        
+    print(f"\nMenu for {date}:")
+    for period_name, period_data in data[date].items():
+        if period_name == "periods":
+            continue
+        print(f"\nPeriod: {period_name}")
+        for category in period_data:
             print(f"  {category['name']}")
             for item in category['items']:
                 print(f"    {item['name']:<40} {item['id']}")
+
+if __name__ == "__main__":
+    # Update data for the next 28 days
+    today = datetime.now().strftime("%Y-%m-%d")
+    update_dining_data(SBISA_LOCATION_ID, today,3)
+    
+    # Print today's menu as an example
+    print_menu_for_date(today)
+    print_menu_for_date((datetime.now() + timedelta(days=1)).strftime("%Y-%m-%d"))
+    print_menu_for_date((datetime.now() + timedelta(days=2)).strftime("%Y-%m-%d"))
 
 
