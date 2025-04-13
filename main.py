@@ -3,6 +3,7 @@ import json
 from datetime import datetime, timedelta
 from pathlib import Path
 from loguru import logger
+import time
 
 BASE_URL_SCHEME = "https://api.dineoncampus.com/v1/location/"
 SBISA_LOCATION_ID = "587909deee596f31cedc179c"
@@ -17,24 +18,26 @@ logger.add("dining.log", rotation="1 day", retention="7 days", level="INFO")
 # FORMAT FOR DATA
 # {
 #     "YYYY-MM-DD": {
-#         "success": true,
 #         "periods": {
 #             "period_name": "period_id",
 #             ...
 #         },
 #         "period_name": {
 #             "location_name": {
-#                 "category_name": {
-#                     "category_id": "category_id",
-#                     "items": [
-#                         {
-#                             "name": "item_name",
-#                             "id": "item_id"
-#                         },
-#                         ...
-#                     ]
-#                 },
-#                 ...
+#                 "success": false,
+#                 "menu": {
+#                     "category_name": {
+#                         "category_id": "category_id",
+#                         "items": [
+#                             {
+#                                 "name": "item_name",
+#                                 "id": "item_id"
+#                             },
+#                             ...
+#                         ]
+#                     },
+#                     ...
+#                 }
 #             }
 #             ...
 #         }
@@ -67,17 +70,40 @@ def get_periods(location_id : str, date : str) -> dict[str, str]:
     url = get_url(location_id, date)
     logger.debug(f"Fetching periods from {url}")
     scraper = cloudscraper.create_scraper()
-    response = scraper.get(url)
-    periods = response.json()["periods"]
-    logger.info(f"Found {len(periods)} periods for {date}")
-    return {period["name"]: period["id"] for period in periods}
+    max_retries = 3
+    for attempt in range(max_retries):
+        try:
+            response = scraper.get(url)
+            periods = response.json()["periods"]
+            logger.info(f"Found {len(periods)} periods for {date}")
+            return {period["name"]: period["id"] for period in periods}
+        except Exception as e:
+            if attempt < max_retries - 1:
+                logger.warning(f"Attempt {attempt + 1} failed: {str(e)}. Retrying...")
+                time.sleep(1)
+                continue
+            else:
+                logger.error(f"All {max_retries} attempts failed: {str(e)}")
+                raise
 
 def get_menu(location_id : str, date : str, period_id : str) -> list:
     url = get_url(location_id, date, period_id)
     logger.debug(f"Fetching menu from {url}")
     scraper = cloudscraper.create_scraper()
-    response = scraper.get(url)
-    return response.json()["menu"]["periods"]["categories"]
+    
+    max_retries = 3
+    for attempt in range(max_retries):
+        try:
+            response = scraper.get(url)
+            return response.json()["menu"]["periods"]["categories"]
+        except Exception as e:
+            if attempt < max_retries - 1:
+                logger.warning(f"Attempt {attempt + 1} failed: {str(e)}. Retrying...")
+                time.sleep(1)
+                continue
+            else:
+                logger.error(f"All {max_retries} attempts failed: {str(e)}")
+                raise
 
 def update_dining_data(location_id: str, start_date: str, days: int = 28):
     """Update dining data for the specified number of days starting from start_date"""
@@ -96,11 +122,7 @@ def update_dining_data(location_id: str, start_date: str, days: int = 28):
         # Initialize date entry if it doesn't exist
         if date_str not in data:
             data[date_str] = {}
-        else:
-            if data[date_str]["success"]:
-                logger.info(f"Skipping {date_str} because it already exists")
-                continue
-
+        
         try:
             # Get periods for the date
             periods = get_periods(location_id, date_str)
@@ -108,13 +130,39 @@ def update_dining_data(location_id: str, start_date: str, days: int = 28):
             
             # Get menu for each period
             for period_name, period_id in periods.items():
-                logger.debug(f"Fetching {period_name} menu for {date_str}")
-                menu = get_menu(location_id, date_str, period_id)
+                # Skip if this period was already successfully fetched
+                if (period_name in data[date_str] and 
+                    location_name in data[date_str][period_name] and 
+                    data[date_str][period_name][location_name]["success"]):
+                    logger.info(f"Skipping {period_name} for {date_str} - already successfully fetched")
+                    continue
+                
+                # Initialize the period and location structure
                 if period_name not in data[date_str]:
                     data[date_str][period_name] = {}
-                data[date_str][period_name][location_name] = menu
+                if location_name not in data[date_str][period_name]:
+                    data[date_str][period_name][location_name] = {"success": False}
                 
-            data[date_str]["success"] = True
+                logger.debug(f"Fetching {period_name} menu for {date_str}")
+                menu = get_menu(location_id, date_str, period_id)
+                
+                # Add menu items to the existing structure
+                data[date_str][period_name][location_name]["menu"] = {}
+                for category in menu:
+                    category_name = category["name"]
+                    if category_name not in data[date_str][period_name][location_name]["menu"]:
+                        data[date_str][period_name][location_name]["menu"][category_name] = {
+                            "category_id": category.get("id", ""),
+                            "items": []
+                        }
+                    for item in category["items"]:
+                        data[date_str][period_name][location_name]["menu"][category_name]["items"].append({
+                            "name": item["name"],
+                            "id": item["id"]
+                        })
+                
+                data[date_str][period_name][location_name]["success"] = True
+                
             # Save after each successful date to prevent data loss
             save_data(data)
             logger.success(f"Successfully processed {date_str}")

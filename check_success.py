@@ -7,6 +7,8 @@ if __name__ == "__main__":
     data = load_data()
     for date, date_data in data.items():
         for period, period_data in date_data.items():
+            if period == "periods":
+                continue
             for location, location_data in period_data.items():
                 if not location_data["success"]:
                     failed += 1

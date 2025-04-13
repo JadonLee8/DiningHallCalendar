@@ -1,0 +1,415 @@
+2025-04-13 16:37:12.164 | INFO     | __main__:load_data:54 - No existing data file found, starting with empty data
+2025-04-13 16:37:12.166 | INFO     | __main__:update_dining_data:105 - Starting update for SBISA from 2025-04-13 for 28 days
+2025-04-13 16:37:12.167 | INFO     | __main__:update_dining_data:109 - Processing 2025-04-13 for SBISA
+2025-04-13 16:37:21.600 | INFO     | __main__:get_periods:75 - Found 2 periods for 2025-04-13
+2025-04-13 16:37:39.488 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 16:37:39.488 | SUCCESS  | __main__:update_dining_data:157 - Successfully processed 2025-04-13
+2025-04-13 16:37:39.489 | INFO     | __main__:update_dining_data:109 - Processing 2025-04-14 for SBISA
+2025-04-13 16:37:41.369 | INFO     | __main__:get_periods:75 - Found 3 periods for 2025-04-14
+2025-04-13 16:37:50.781 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 16:37:50.782 | SUCCESS  | __main__:update_dining_data:157 - Successfully processed 2025-04-14
+2025-04-13 16:37:50.782 | INFO     | __main__:update_dining_data:109 - Processing 2025-04-15 for SBISA
+2025-04-13 16:37:52.625 | INFO     | __main__:get_periods:75 - Found 3 periods for 2025-04-15
+2025-04-13 16:37:59.908 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 16:37:59.908 | SUCCESS  | __main__:update_dining_data:157 - Successfully processed 2025-04-15
+2025-04-13 16:37:59.924 | INFO     | __main__:update_dining_data:109 - Processing 2025-04-16 for SBISA
+2025-04-13 16:39:29.131 | INFO     | __main__:update_dining_data:105 - Starting update for SBISA from 2025-04-13 for 28 days
+2025-04-13 16:39:29.134 | INFO     | __main__:update_dining_data:109 - Processing 2025-04-13 for SBISA
+2025-04-13 16:39:47.419 | ERROR    | __main__:update_dining_data:160 - Error processing 2025-04-13: HTTPSConnectionPool(host='api.dineoncampus.com', port=443): Max retries exceeded with url: /v1/location/587909deee596f31cedc179c/periods?platform=0&date=2025-04-13 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-04-13 16:39:47.419 | INFO     | __main__:update_dining_data:109 - Processing 2025-04-14 for SBISA
+2025-04-13 16:39:51.024 | INFO     | __main__:get_periods:75 - Found 3 periods for 2025-04-14
+2025-04-13 16:39:51.024 | INFO     | __main__:update_dining_data:126 - Skipping Breakfast for 2025-04-14 - already successfully fetched
+2025-04-13 16:39:51.024 | INFO     | __main__:update_dining_data:126 - Skipping Lunch for 2025-04-14 - already successfully fetched
+2025-04-13 16:39:51.024 | INFO     | __main__:update_dining_data:126 - Skipping Dinner for 2025-04-14 - already successfully fetched
+2025-04-13 16:39:51.024 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 16:39:51.024 | SUCCESS  | __main__:update_dining_data:157 - Successfully processed 2025-04-14
+2025-04-13 16:39:51.024 | INFO     | __main__:update_dining_data:109 - Processing 2025-04-15 for SBISA
+2025-04-13 16:39:52.815 | INFO     | __main__:get_periods:75 - Found 3 periods for 2025-04-15
+2025-04-13 16:39:52.816 | INFO     | __main__:update_dining_data:126 - Skipping Breakfast for 2025-04-15 - already successfully fetched
+2025-04-13 16:39:52.816 | INFO     | __main__:update_dining_data:126 - Skipping Lunch for 2025-04-15 - already successfully fetched
+2025-04-13 16:39:52.816 | INFO     | __main__:update_dining_data:126 - Skipping Dinner for 2025-04-15 - already successfully fetched
+2025-04-13 16:39:52.823 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 16:39:52.823 | SUCCESS  | __main__:update_dining_data:157 - Successfully processed 2025-04-15
+2025-04-13 16:39:52.823 | INFO     | __main__:update_dining_data:109 - Processing 2025-04-16 for SBISA
+2025-04-13 16:39:54.482 | INFO     | __main__:get_periods:75 - Found 3 periods for 2025-04-16
+2025-04-13 16:40:04.347 | WARNING  | __main__:get_menu:90 - Attempt 1 failed: Expecting value: line 1 column 1 (char 0). Retrying...
+2025-04-13 16:40:05.366 | WARNING  | __main__:get_menu:90 - Attempt 2 failed: Expecting value: line 1 column 1 (char 0). Retrying...
+2025-04-13 16:40:06.384 | ERROR    | __main__:get_menu:94 - All 3 attempts failed: Expecting value: line 1 column 1 (char 0)
+2025-04-13 16:40:06.384 | ERROR    | __main__:update_dining_data:160 - Error processing 2025-04-16: Expecting value: line 1 column 1 (char 0)
+2025-04-13 16:40:06.384 | INFO     | __main__:update_dining_data:109 - Processing 2025-04-17 for SBISA
+2025-04-13 16:40:08.263 | INFO     | __main__:get_periods:75 - Found 3 periods for 2025-04-17
+2025-04-13 16:40:23.510 | WARNING  | __main__:get_menu:90 - Attempt 1 failed: HTTPSConnectionPool(host='api.dineoncampus.com', port=443): Max retries exceeded with url: /v1/location/587909deee596f31cedc179c/periods/674dd84bc625af0715538f86?platform=0&date=2025-04-17 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)'))). Retrying...
+2025-04-13 16:41:01.177 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 16:41:01.177 | SUCCESS  | __main__:update_dining_data:157 - Successfully processed 2025-04-17
+2025-04-13 16:41:01.178 | INFO     | __main__:update_dining_data:109 - Processing 2025-04-18 for SBISA
+2025-04-13 16:41:01.819 | ERROR    | __main__:update_dining_data:160 - Error processing 2025-04-18: 'periods'
+2025-04-13 16:41:01.820 | INFO     | __main__:update_dining_data:109 - Processing 2025-04-19 for SBISA
+2025-04-13 16:41:02.445 | ERROR    | __main__:update_dining_data:160 - Error processing 2025-04-19: 'periods'
+2025-04-13 16:41:02.445 | INFO     | __main__:update_dining_data:109 - Processing 2025-04-20 for SBISA
+2025-04-13 16:41:03.203 | ERROR    | __main__:update_dining_data:160 - Error processing 2025-04-20: 'periods'
+2025-04-13 16:41:03.203 | INFO     | __main__:update_dining_data:109 - Processing 2025-04-21 for SBISA
+2025-04-13 16:41:06.754 | INFO     | __main__:get_periods:75 - Found 3 periods for 2025-04-21
+2025-04-13 16:41:28.995 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 16:41:28.996 | SUCCESS  | __main__:update_dining_data:157 - Successfully processed 2025-04-21
+2025-04-13 16:41:28.996 | INFO     | __main__:update_dining_data:109 - Processing 2025-04-22 for SBISA
+2025-04-13 16:41:32.426 | INFO     | __main__:get_periods:75 - Found 3 periods for 2025-04-22
+2025-04-13 16:41:44.658 | WARNING  | __main__:get_menu:90 - Attempt 1 failed: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)). Retrying...
+2025-04-13 16:41:59.604 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 16:41:59.605 | SUCCESS  | __main__:update_dining_data:157 - Successfully processed 2025-04-22
+2025-04-13 16:41:59.605 | INFO     | __main__:update_dining_data:109 - Processing 2025-04-23 for SBISA
+2025-04-13 16:42:05.039 | INFO     | __main__:get_periods:75 - Found 3 periods for 2025-04-23
+2025-04-13 16:42:21.954 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 16:42:21.954 | SUCCESS  | __main__:update_dining_data:157 - Successfully processed 2025-04-23
+2025-04-13 16:42:21.954 | INFO     | __main__:update_dining_data:109 - Processing 2025-04-24 for SBISA
+2025-04-13 16:42:27.660 | INFO     | __main__:get_periods:75 - Found 3 periods for 2025-04-24
+2025-04-13 16:42:43.589 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 16:42:43.589 | SUCCESS  | __main__:update_dining_data:157 - Successfully processed 2025-04-24
+2025-04-13 16:42:43.590 | INFO     | __main__:update_dining_data:109 - Processing 2025-04-25 for SBISA
+2025-04-13 16:42:49.396 | INFO     | __main__:get_periods:75 - Found 3 periods for 2025-04-25
+2025-04-13 16:42:58.653 | WARNING  | __main__:get_menu:90 - Attempt 1 failed: Expecting value: line 1 column 1 (char 0). Retrying...
+2025-04-13 16:42:59.673 | WARNING  | __main__:get_menu:90 - Attempt 2 failed: Expecting value: line 1 column 1 (char 0). Retrying...
+2025-04-13 16:43:03.061 | ERROR    | __main__:get_menu:94 - All 3 attempts failed: Expecting value: line 1 column 1 (char 0)
+2025-04-13 16:43:03.061 | ERROR    | __main__:update_dining_data:160 - Error processing 2025-04-25: Expecting value: line 1 column 1 (char 0)
+2025-04-13 16:43:03.061 | INFO     | __main__:update_dining_data:109 - Processing 2025-04-26 for SBISA
+2025-04-13 16:43:07.441 | INFO     | __main__:get_periods:75 - Found 2 periods for 2025-04-26
+2025-04-13 16:43:13.849 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 16:43:13.850 | SUCCESS  | __main__:update_dining_data:157 - Successfully processed 2025-04-26
+2025-04-13 16:43:13.850 | INFO     | __main__:update_dining_data:109 - Processing 2025-04-27 for SBISA
+2025-04-13 16:43:31.832 | INFO     | __main__:get_periods:75 - Found 2 periods for 2025-04-27
+2025-04-13 16:43:38.697 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 16:43:38.697 | SUCCESS  | __main__:update_dining_data:157 - Successfully processed 2025-04-27
+2025-04-13 16:43:38.697 | INFO     | __main__:update_dining_data:109 - Processing 2025-04-28 for SBISA
+2025-04-13 16:43:54.378 | ERROR    | __main__:update_dining_data:160 - Error processing 2025-04-28: Expecting value: line 1 column 1 (char 0)
+2025-04-13 16:43:54.379 | INFO     | __main__:update_dining_data:109 - Processing 2025-04-29 for SBISA
+2025-04-13 16:43:54.936 | ERROR    | __main__:update_dining_data:160 - Error processing 2025-04-29: Expecting value: line 1 column 1 (char 0)
+2025-04-13 16:43:54.937 | INFO     | __main__:update_dining_data:109 - Processing 2025-04-30 for SBISA
+2025-04-13 16:43:59.088 | INFO     | __main__:get_periods:75 - Found 3 periods for 2025-04-30
+2025-04-13 16:44:07.522 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 16:44:07.524 | SUCCESS  | __main__:update_dining_data:157 - Successfully processed 2025-04-30
+2025-04-13 16:44:07.524 | INFO     | __main__:update_dining_data:109 - Processing 2025-05-01 for SBISA
+2025-04-13 16:44:11.256 | INFO     | __main__:get_periods:75 - Found 3 periods for 2025-05-01
+2025-04-13 16:44:19.738 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 16:44:19.739 | SUCCESS  | __main__:update_dining_data:157 - Successfully processed 2025-05-01
+2025-04-13 16:44:19.739 | INFO     | __main__:update_dining_data:109 - Processing 2025-05-02 for SBISA
+2025-04-13 16:44:22.936 | INFO     | __main__:get_periods:75 - Found 3 periods for 2025-05-02
+2025-04-13 16:44:29.243 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 16:44:29.244 | SUCCESS  | __main__:update_dining_data:157 - Successfully processed 2025-05-02
+2025-04-13 16:44:29.244 | INFO     | __main__:update_dining_data:109 - Processing 2025-05-03 for SBISA
+2025-04-13 16:44:31.425 | INFO     | __main__:get_periods:75 - Found 2 periods for 2025-05-03
+2025-04-13 16:44:38.991 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 16:44:38.991 | SUCCESS  | __main__:update_dining_data:157 - Successfully processed 2025-05-03
+2025-04-13 16:44:38.991 | INFO     | __main__:update_dining_data:109 - Processing 2025-05-04 for SBISA
+2025-04-13 16:44:43.242 | INFO     | __main__:get_periods:75 - Found 1 periods for 2025-05-04
+2025-04-13 16:44:47.053 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 16:44:47.054 | SUCCESS  | __main__:update_dining_data:157 - Successfully processed 2025-05-04
+2025-04-13 16:44:47.054 | INFO     | __main__:update_dining_data:109 - Processing 2025-05-05 for SBISA
+2025-04-13 16:44:50.431 | INFO     | __main__:get_periods:75 - Found 3 periods for 2025-05-05
+2025-04-13 16:44:59.765 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 16:44:59.765 | SUCCESS  | __main__:update_dining_data:157 - Successfully processed 2025-05-05
+2025-04-13 16:44:59.765 | INFO     | __main__:update_dining_data:109 - Processing 2025-05-06 for SBISA
+2025-04-13 16:45:01.489 | INFO     | __main__:get_periods:75 - Found 3 periods for 2025-05-06
+2025-04-13 16:45:08.117 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 16:45:08.117 | SUCCESS  | __main__:update_dining_data:157 - Successfully processed 2025-05-06
+2025-04-13 16:45:08.117 | INFO     | __main__:update_dining_data:109 - Processing 2025-05-07 for SBISA
+2025-04-13 16:45:09.811 | INFO     | __main__:get_periods:75 - Found 0 periods for 2025-05-07
+2025-04-13 16:45:09.845 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 16:45:09.846 | SUCCESS  | __main__:update_dining_data:157 - Successfully processed 2025-05-07
+2025-04-13 16:45:09.846 | INFO     | __main__:update_dining_data:109 - Processing 2025-05-08 for SBISA
+2025-04-13 16:45:11.645 | INFO     | __main__:get_periods:75 - Found 0 periods for 2025-05-08
+2025-04-13 16:45:11.681 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 16:45:11.681 | SUCCESS  | __main__:update_dining_data:157 - Successfully processed 2025-05-08
+2025-04-13 16:45:11.681 | INFO     | __main__:update_dining_data:109 - Processing 2025-05-09 for SBISA
+2025-04-13 16:45:13.241 | INFO     | __main__:get_periods:75 - Found 0 periods for 2025-05-09
+2025-04-13 16:45:13.275 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 16:45:13.275 | SUCCESS  | __main__:update_dining_data:157 - Successfully processed 2025-05-09
+2025-04-13 16:45:13.276 | INFO     | __main__:update_dining_data:109 - Processing 2025-05-10 for SBISA
+2025-04-13 16:45:14.889 | INFO     | __main__:get_periods:75 - Found 0 periods for 2025-05-10
+2025-04-13 16:45:14.924 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 16:45:14.924 | SUCCESS  | __main__:update_dining_data:157 - Successfully processed 2025-05-10
+2025-04-13 16:51:05.428 | INFO     | main:save_data:61 - Data saved to dining_data.json
+2025-04-13 16:53:46.400 | INFO     | __main__:update_dining_data:116 - Starting update for SBISA from 2025-04-13 for 28 days
+2025-04-13 16:53:46.400 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-13 for SBISA
+2025-04-13 16:53:48.749 | INFO     | __main__:get_periods:78 - Found 2 periods for 2025-04-13
+2025-04-13 16:53:56.257 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 16:53:56.258 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-04-13
+2025-04-13 16:53:56.258 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-14 for SBISA
+2025-04-13 16:53:57.640 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-04-14
+2025-04-13 16:53:58.174 | WARNING  | __main__:get_menu:101 - Attempt 1 failed: Expecting value: line 1 column 1 (char 0). Retrying...
+2025-04-13 16:53:59.196 | WARNING  | __main__:get_menu:101 - Attempt 2 failed: Expecting value: line 1 column 1 (char 0). Retrying...
+2025-04-13 16:54:00.221 | ERROR    | __main__:get_menu:105 - All 3 attempts failed: Expecting value: line 1 column 1 (char 0)
+2025-04-13 16:54:00.221 | ERROR    | __main__:update_dining_data:171 - Error processing 2025-04-14: Expecting value: line 1 column 1 (char 0)
+2025-04-13 16:54:00.221 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-15 for SBISA
+2025-04-13 16:54:03.872 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-04-15
+2025-04-13 16:54:14.320 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 16:54:14.320 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-04-15
+2025-04-13 16:54:14.320 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-16 for SBISA
+2025-04-13 16:54:16.216 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-04-16
+2025-04-13 16:54:24.453 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 16:54:24.453 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-04-16
+2025-04-13 16:54:24.454 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-17 for SBISA
+2025-04-13 16:54:26.928 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-04-17
+2025-04-13 16:54:41.905 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 16:54:41.905 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-04-17
+2025-04-13 16:54:41.905 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-18 for SBISA
+2025-04-13 16:54:42.550 | WARNING  | __main__:get_periods:82 - Attempt 1 failed: 'periods'. Retrying...
+2025-04-13 16:54:43.642 | WARNING  | __main__:get_periods:82 - Attempt 2 failed: 'periods'. Retrying...
+2025-04-13 16:54:44.731 | ERROR    | __main__:get_periods:86 - All 3 attempts failed: 'periods'
+2025-04-13 16:54:44.731 | ERROR    | __main__:update_dining_data:171 - Error processing 2025-04-18: 'periods'
+2025-04-13 16:54:44.731 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-19 for SBISA
+2025-04-13 16:54:45.407 | WARNING  | __main__:get_periods:82 - Attempt 1 failed: 'periods'. Retrying...
+2025-04-13 16:54:46.494 | WARNING  | __main__:get_periods:82 - Attempt 2 failed: 'periods'. Retrying...
+2025-04-13 16:54:47.625 | ERROR    | __main__:get_periods:86 - All 3 attempts failed: 'periods'
+2025-04-13 16:54:47.625 | ERROR    | __main__:update_dining_data:171 - Error processing 2025-04-19: 'periods'
+2025-04-13 16:54:47.625 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-20 for SBISA
+2025-04-13 16:54:48.266 | WARNING  | __main__:get_periods:82 - Attempt 1 failed: 'periods'. Retrying...
+2025-04-13 16:54:49.387 | WARNING  | __main__:get_periods:82 - Attempt 2 failed: 'periods'. Retrying...
+2025-04-13 16:54:50.480 | ERROR    | __main__:get_periods:86 - All 3 attempts failed: 'periods'
+2025-04-13 16:54:50.480 | ERROR    | __main__:update_dining_data:171 - Error processing 2025-04-20: 'periods'
+2025-04-13 16:54:50.481 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-21 for SBISA
+2025-04-13 16:54:51.891 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-04-21
+2025-04-13 16:55:00.337 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 16:55:00.337 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-04-21
+2025-04-13 16:55:00.337 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-22 for SBISA
+2025-04-13 16:55:03.325 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-04-22
+2025-04-13 16:55:10.798 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 16:55:10.798 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-04-22
+2025-04-13 16:55:10.799 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-23 for SBISA
+2025-04-13 16:55:13.560 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-04-23
+2025-04-13 16:55:21.766 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 16:55:21.767 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-04-23
+2025-04-13 16:55:21.767 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-24 for SBISA
+2025-04-13 16:55:22.407 | WARNING  | __main__:get_periods:82 - Attempt 1 failed: Expecting value: line 1 column 1 (char 0). Retrying...
+2025-04-13 16:55:23.429 | WARNING  | __main__:get_periods:82 - Attempt 2 failed: Expecting value: line 1 column 1 (char 0). Retrying...
+2025-04-13 16:55:24.455 | ERROR    | __main__:get_periods:86 - All 3 attempts failed: Expecting value: line 1 column 1 (char 0)
+2025-04-13 16:55:24.455 | ERROR    | __main__:update_dining_data:171 - Error processing 2025-04-24: Expecting value: line 1 column 1 (char 0)
+2025-04-13 16:55:24.456 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-25 for SBISA
+2025-04-13 16:55:26.173 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-04-25
+2025-04-13 16:55:34.813 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 16:55:34.813 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-04-25
+2025-04-13 16:55:34.814 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-26 for SBISA
+2025-04-13 16:55:37.257 | INFO     | __main__:get_periods:78 - Found 2 periods for 2025-04-26
+2025-04-13 16:55:44.237 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 16:55:44.238 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-04-26
+2025-04-13 16:55:44.238 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-27 for SBISA
+2025-04-13 16:55:50.426 | INFO     | __main__:get_periods:78 - Found 2 periods for 2025-04-27
+2025-04-13 16:55:57.635 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 16:55:57.636 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-04-27
+2025-04-13 16:55:57.636 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-28 for SBISA
+2025-04-13 16:56:01.477 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-04-28
+2025-04-13 16:56:08.956 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 16:56:08.956 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-04-28
+2025-04-13 16:56:08.956 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-29 for SBISA
+2025-04-13 16:56:09.534 | WARNING  | __main__:get_periods:82 - Attempt 1 failed: Expecting value: line 1 column 1 (char 0). Retrying...
+2025-04-13 16:56:10.557 | WARNING  | __main__:get_periods:82 - Attempt 2 failed: Expecting value: line 1 column 1 (char 0). Retrying...
+2025-04-13 16:56:11.583 | ERROR    | __main__:get_periods:86 - All 3 attempts failed: Expecting value: line 1 column 1 (char 0)
+2025-04-13 16:56:11.584 | ERROR    | __main__:update_dining_data:171 - Error processing 2025-04-29: Expecting value: line 1 column 1 (char 0)
+2025-04-13 16:56:11.584 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-30 for SBISA
+2025-04-13 16:56:13.265 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-04-30
+2025-04-13 16:56:19.008 | WARNING  | __main__:get_menu:101 - Attempt 1 failed: Expecting value: line 1 column 1 (char 0). Retrying...
+2025-04-13 16:56:20.030 | WARNING  | __main__:get_menu:101 - Attempt 2 failed: Expecting value: line 1 column 1 (char 0). Retrying...
+2025-04-13 16:56:21.065 | ERROR    | __main__:get_menu:105 - All 3 attempts failed: Expecting value: line 1 column 1 (char 0)
+2025-04-13 16:56:21.065 | ERROR    | __main__:update_dining_data:171 - Error processing 2025-04-30: Expecting value: line 1 column 1 (char 0)
+2025-04-13 16:56:21.066 | INFO     | __main__:update_dining_data:120 - Processing 2025-05-01 for SBISA
+2025-04-13 16:56:23.710 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-05-01
+2025-04-13 16:56:29.325 | WARNING  | __main__:get_menu:101 - Attempt 1 failed: Expecting value: line 1 column 1 (char 0). Retrying...
+2025-04-13 16:56:30.350 | WARNING  | __main__:get_menu:101 - Attempt 2 failed: Expecting value: line 1 column 1 (char 0). Retrying...
+2025-04-13 16:56:31.378 | ERROR    | __main__:get_menu:105 - All 3 attempts failed: Expecting value: line 1 column 1 (char 0)
+2025-04-13 16:56:31.378 | ERROR    | __main__:update_dining_data:171 - Error processing 2025-05-01: Expecting value: line 1 column 1 (char 0)
+2025-04-13 16:56:31.378 | INFO     | __main__:update_dining_data:120 - Processing 2025-05-02 for SBISA
+2025-04-13 16:56:33.458 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-05-02
+2025-04-13 16:56:34.071 | WARNING  | __main__:get_menu:101 - Attempt 1 failed: Expecting value: line 1 column 1 (char 0). Retrying...
+2025-04-13 16:56:35.093 | WARNING  | __main__:get_menu:101 - Attempt 2 failed: Expecting value: line 1 column 1 (char 0). Retrying...
+2025-04-13 16:56:36.115 | ERROR    | __main__:get_menu:105 - All 3 attempts failed: Expecting value: line 1 column 1 (char 0)
+2025-04-13 16:56:36.115 | ERROR    | __main__:update_dining_data:171 - Error processing 2025-05-02: Expecting value: line 1 column 1 (char 0)
+2025-04-13 16:56:36.115 | INFO     | __main__:update_dining_data:120 - Processing 2025-05-03 for SBISA
+2025-04-13 16:56:40.497 | INFO     | __main__:get_periods:78 - Found 2 periods for 2025-05-03
+2025-04-13 16:56:41.236 | WARNING  | __main__:get_menu:101 - Attempt 1 failed: Expecting value: line 1 column 1 (char 0). Retrying...
+2025-04-13 16:56:42.259 | WARNING  | __main__:get_menu:101 - Attempt 2 failed: Expecting value: line 1 column 1 (char 0). Retrying...
+2025-04-13 16:56:43.275 | ERROR    | __main__:get_menu:105 - All 3 attempts failed: Expecting value: line 1 column 1 (char 0)
+2025-04-13 16:56:43.275 | ERROR    | __main__:update_dining_data:171 - Error processing 2025-05-03: Expecting value: line 1 column 1 (char 0)
+2025-04-13 16:56:43.283 | INFO     | __main__:update_dining_data:120 - Processing 2025-05-04 for SBISA
+2025-04-13 16:56:47.374 | INFO     | __main__:get_periods:78 - Found 1 periods for 2025-05-04
+2025-04-13 16:56:50.261 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 16:56:50.261 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-05-04
+2025-04-13 16:56:50.262 | INFO     | __main__:update_dining_data:120 - Processing 2025-05-05 for SBISA
+2025-04-13 16:56:51.842 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-05-05
+2025-04-13 16:56:59.626 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 16:56:59.626 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-05-05
+2025-04-13 16:56:59.628 | INFO     | __main__:update_dining_data:120 - Processing 2025-05-06 for SBISA
+2025-04-13 16:57:03.318 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-05-06
+2025-04-13 16:57:11.880 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 16:57:11.880 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-05-06
+2025-04-13 16:57:11.881 | INFO     | __main__:update_dining_data:120 - Processing 2025-05-07 for SBISA
+2025-04-13 16:57:12.525 | WARNING  | __main__:get_periods:82 - Attempt 1 failed: Expecting value: line 1 column 1 (char 0). Retrying...
+2025-04-13 16:57:13.547 | WARNING  | __main__:get_periods:82 - Attempt 2 failed: Expecting value: line 1 column 1 (char 0). Retrying...
+2025-04-13 16:57:14.569 | ERROR    | __main__:get_periods:86 - All 3 attempts failed: Expecting value: line 1 column 1 (char 0)
+2025-04-13 16:57:14.569 | ERROR    | __main__:update_dining_data:171 - Error processing 2025-05-07: Expecting value: line 1 column 1 (char 0)
+2025-04-13 16:57:14.569 | INFO     | __main__:update_dining_data:120 - Processing 2025-05-08 for SBISA
+2025-04-13 16:57:16.382 | INFO     | __main__:get_periods:78 - Found 0 periods for 2025-05-08
+2025-04-13 16:57:16.416 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 16:57:16.416 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-05-08
+2025-04-13 16:57:16.417 | INFO     | __main__:update_dining_data:120 - Processing 2025-05-09 for SBISA
+2025-04-13 16:57:24.171 | INFO     | __main__:get_periods:78 - Found 0 periods for 2025-05-09
+2025-04-13 16:57:24.210 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 16:57:24.211 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-05-09
+2025-04-13 16:57:24.211 | INFO     | __main__:update_dining_data:120 - Processing 2025-05-10 for SBISA
+2025-04-13 16:57:25.736 | INFO     | __main__:get_periods:78 - Found 0 periods for 2025-05-10
+2025-04-13 16:57:25.769 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 16:57:25.769 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-05-10
+2025-04-13 17:01:38.473 | INFO     | __main__:update_dining_data:116 - Starting update for SBISA from 2025-04-13 for 28 days
+2025-04-13 17:01:38.474 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-13 for SBISA
+2025-04-13 17:01:41.791 | INFO     | __main__:get_periods:78 - Found 2 periods for 2025-04-13
+2025-04-13 17:01:41.792 | INFO     | __main__:update_dining_data:137 - Skipping Dinner for 2025-04-13 - already successfully fetched
+2025-04-13 17:01:41.792 | INFO     | __main__:update_dining_data:137 - Skipping Brunch for 2025-04-13 - already successfully fetched
+2025-04-13 17:01:41.821 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 17:01:41.821 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-04-13
+2025-04-13 17:01:41.821 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-14 for SBISA
+2025-04-13 17:01:52.177 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-04-14
+2025-04-13 17:02:12.668 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 17:02:12.668 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-04-14
+2025-04-13 17:02:12.668 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-15 for SBISA
+2025-04-13 17:02:15.298 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-04-15
+2025-04-13 17:02:15.298 | INFO     | __main__:update_dining_data:137 - Skipping Breakfast for 2025-04-15 - already successfully fetched
+2025-04-13 17:02:15.298 | INFO     | __main__:update_dining_data:137 - Skipping Lunch for 2025-04-15 - already successfully fetched
+2025-04-13 17:02:15.299 | INFO     | __main__:update_dining_data:137 - Skipping Dinner for 2025-04-15 - already successfully fetched
+2025-04-13 17:02:15.329 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 17:02:15.330 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-04-15
+2025-04-13 17:02:15.330 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-16 for SBISA
+2025-04-13 17:02:17.211 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-04-16
+2025-04-13 17:02:17.211 | INFO     | __main__:update_dining_data:137 - Skipping Breakfast for 2025-04-16 - already successfully fetched
+2025-04-13 17:02:17.211 | INFO     | __main__:update_dining_data:137 - Skipping Lunch for 2025-04-16 - already successfully fetched
+2025-04-13 17:02:17.211 | INFO     | __main__:update_dining_data:137 - Skipping Dinner for 2025-04-16 - already successfully fetched
+2025-04-13 17:02:17.242 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 17:02:17.242 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-04-16
+2025-04-13 17:02:17.242 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-17 for SBISA
+2025-04-13 17:02:21.281 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-04-17
+2025-04-13 17:02:21.281 | INFO     | __main__:update_dining_data:137 - Skipping Breakfast for 2025-04-17 - already successfully fetched
+2025-04-13 17:02:21.282 | INFO     | __main__:update_dining_data:137 - Skipping Lunch for 2025-04-17 - already successfully fetched
+2025-04-13 17:02:21.282 | INFO     | __main__:update_dining_data:137 - Skipping Dinner for 2025-04-17 - already successfully fetched
+2025-04-13 17:02:21.313 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 17:02:21.313 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-04-17
+2025-04-13 17:02:21.313 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-18 for SBISA
+2025-04-13 17:02:21.914 | WARNING  | __main__:get_periods:82 - Attempt 1 failed: 'periods'. Retrying...
+2025-04-13 17:02:23.009 | WARNING  | __main__:get_periods:82 - Attempt 2 failed: 'periods'. Retrying...
+2025-04-13 17:02:24.111 | ERROR    | __main__:get_periods:86 - All 3 attempts failed: 'periods'
+2025-04-13 17:02:24.111 | ERROR    | __main__:update_dining_data:171 - Error processing 2025-04-18: 'periods'
+2025-04-13 17:02:24.111 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-19 for SBISA
+2025-04-13 17:02:24.832 | WARNING  | __main__:get_periods:82 - Attempt 1 failed: 'periods'. Retrying...
+2025-04-13 17:02:25.928 | WARNING  | __main__:get_periods:82 - Attempt 2 failed: 'periods'. Retrying...
+2025-04-13 17:02:27.018 | ERROR    | __main__:get_periods:86 - All 3 attempts failed: 'periods'
+2025-04-13 17:02:27.018 | ERROR    | __main__:update_dining_data:171 - Error processing 2025-04-19: 'periods'
+2025-04-13 17:02:27.019 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-20 for SBISA
+2025-04-13 17:02:27.624 | WARNING  | __main__:get_periods:82 - Attempt 1 failed: 'periods'. Retrying...
+2025-04-13 17:02:28.711 | WARNING  | __main__:get_periods:82 - Attempt 2 failed: 'periods'. Retrying...
+2025-04-13 17:02:29.799 | ERROR    | __main__:get_periods:86 - All 3 attempts failed: 'periods'
+2025-04-13 17:02:29.799 | ERROR    | __main__:update_dining_data:171 - Error processing 2025-04-20: 'periods'
+2025-04-13 17:02:29.800 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-21 for SBISA
+2025-04-13 17:02:31.664 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-04-21
+2025-04-13 17:02:31.665 | INFO     | __main__:update_dining_data:137 - Skipping Breakfast for 2025-04-21 - already successfully fetched
+2025-04-13 17:02:31.665 | INFO     | __main__:update_dining_data:137 - Skipping Lunch for 2025-04-21 - already successfully fetched
+2025-04-13 17:02:31.665 | INFO     | __main__:update_dining_data:137 - Skipping Dinner for 2025-04-21 - already successfully fetched
+2025-04-13 17:02:31.694 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 17:02:31.694 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-04-21
+2025-04-13 17:02:31.694 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-22 for SBISA
+2025-04-13 17:02:33.544 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-04-22
+2025-04-13 17:02:33.545 | INFO     | __main__:update_dining_data:137 - Skipping Breakfast for 2025-04-22 - already successfully fetched
+2025-04-13 17:02:33.545 | INFO     | __main__:update_dining_data:137 - Skipping Lunch for 2025-04-22 - already successfully fetched
+2025-04-13 17:02:33.545 | INFO     | __main__:update_dining_data:137 - Skipping Dinner for 2025-04-22 - already successfully fetched
+2025-04-13 17:02:33.574 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 17:02:33.575 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-04-22
+2025-04-13 17:02:33.575 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-23 for SBISA
+2025-04-13 17:02:35.245 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-04-23
+2025-04-13 17:02:35.246 | INFO     | __main__:update_dining_data:137 - Skipping Breakfast for 2025-04-23 - already successfully fetched
+2025-04-13 17:02:35.247 | INFO     | __main__:update_dining_data:137 - Skipping Lunch for 2025-04-23 - already successfully fetched
+2025-04-13 17:02:35.247 | INFO     | __main__:update_dining_data:137 - Skipping Dinner for 2025-04-23 - already successfully fetched
+2025-04-13 17:02:35.297 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 17:02:35.298 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-04-23
+2025-04-13 17:02:35.298 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-24 for SBISA
+2025-04-13 17:02:37.254 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-04-24
+2025-04-13 17:02:44.862 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 17:02:44.863 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-04-24
+2025-04-13 17:02:44.863 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-25 for SBISA
+2025-04-13 17:02:46.758 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-04-25
+2025-04-13 17:02:46.758 | INFO     | __main__:update_dining_data:137 - Skipping Breakfast for 2025-04-25 - already successfully fetched
+2025-04-13 17:02:46.759 | INFO     | __main__:update_dining_data:137 - Skipping Lunch for 2025-04-25 - already successfully fetched
+2025-04-13 17:02:46.759 | INFO     | __main__:update_dining_data:137 - Skipping Dinner for 2025-04-25 - already successfully fetched
+2025-04-13 17:02:46.790 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 17:02:46.790 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-04-25
+2025-04-13 17:02:46.790 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-26 for SBISA
+2025-04-13 17:02:51.021 | INFO     | __main__:get_periods:78 - Found 2 periods for 2025-04-26
+2025-04-13 17:02:51.021 | INFO     | __main__:update_dining_data:137 - Skipping Dinner for 2025-04-26 - already successfully fetched
+2025-04-13 17:02:51.021 | INFO     | __main__:update_dining_data:137 - Skipping Brunch for 2025-04-26 - already successfully fetched
+2025-04-13 17:02:51.054 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 17:02:51.054 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-04-26
+2025-04-13 17:02:51.054 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-27 for SBISA
+2025-04-13 17:02:53.487 | INFO     | __main__:get_periods:78 - Found 2 periods for 2025-04-27
+2025-04-13 17:02:53.487 | INFO     | __main__:update_dining_data:137 - Skipping Dinner for 2025-04-27 - already successfully fetched
+2025-04-13 17:02:53.487 | INFO     | __main__:update_dining_data:137 - Skipping Brunch for 2025-04-27 - already successfully fetched
+2025-04-13 17:02:53.520 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 17:02:53.520 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-04-27
+2025-04-13 17:02:53.520 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-28 for SBISA
+2025-04-13 17:02:55.023 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-04-28
+2025-04-13 17:02:55.023 | INFO     | __main__:update_dining_data:137 - Skipping Breakfast for 2025-04-28 - already successfully fetched
+2025-04-13 17:02:55.023 | INFO     | __main__:update_dining_data:137 - Skipping Lunch for 2025-04-28 - already successfully fetched
+2025-04-13 17:02:55.023 | INFO     | __main__:update_dining_data:137 - Skipping Dinner for 2025-04-28 - already successfully fetched
+2025-04-13 17:02:55.060 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 17:02:55.060 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-04-28
+2025-04-13 17:02:55.060 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-29 for SBISA
+2025-04-13 17:02:58.223 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-04-29
+2025-04-13 17:03:07.667 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 17:03:07.667 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-04-29
+2025-04-13 17:03:07.667 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-30 for SBISA
+2025-04-13 17:03:09.427 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-04-30
+2025-04-13 17:03:09.428 | INFO     | __main__:update_dining_data:137 - Skipping Breakfast for 2025-04-30 - already successfully fetched
+2025-04-13 17:03:09.428 | INFO     | __main__:update_dining_data:137 - Skipping Lunch for 2025-04-30 - already successfully fetched
+2025-04-13 17:03:11.808 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 17:03:11.809 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-04-30
+2025-04-13 17:03:11.809 | INFO     | __main__:update_dining_data:120 - Processing 2025-05-01 for SBISA
+2025-04-13 17:03:13.448 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-05-01
+2025-04-13 17:03:13.449 | INFO     | __main__:update_dining_data:137 - Skipping Breakfast for 2025-05-01 - already successfully fetched
+2025-04-13 17:03:13.449 | INFO     | __main__:update_dining_data:137 - Skipping Lunch for 2025-05-01 - already successfully fetched
+2025-04-13 17:03:16.868 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 17:03:16.869 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-05-01
+2025-04-13 17:03:16.869 | INFO     | __main__:update_dining_data:120 - Processing 2025-05-02 for SBISA
+2025-04-13 17:03:18.600 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-05-02
+2025-04-13 17:03:26.002 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 17:03:26.004 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-05-02
+2025-04-13 17:03:26.004 | INFO     | __main__:update_dining_data:120 - Processing 2025-05-03 for SBISA
+2025-04-13 17:03:27.958 | INFO     | __main__:get_periods:78 - Found 2 periods for 2025-05-03
+2025-04-13 17:03:36.320 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 17:03:36.320 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-05-03
+2025-04-13 17:03:36.321 | INFO     | __main__:update_dining_data:120 - Processing 2025-05-04 for SBISA
+2025-04-13 17:03:40.728 | INFO     | __main__:get_periods:78 - Found 1 periods for 2025-05-04
+2025-04-13 17:03:40.729 | INFO     | __main__:update_dining_data:137 - Skipping Dinner for 2025-05-04 - already successfully fetched
+2025-04-13 17:03:40.780 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 17:03:40.780 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-05-04
+2025-04-13 17:03:40.781 | INFO     | __main__:update_dining_data:120 - Processing 2025-05-05 for SBISA
+2025-04-13 17:03:44.805 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-05-05
+2025-04-13 17:03:44.805 | INFO     | __main__:update_dining_data:137 - Skipping Breakfast for 2025-05-05 - already successfully fetched
+2025-04-13 17:03:44.805 | INFO     | __main__:update_dining_data:137 - Skipping Lunch for 2025-05-05 - already successfully fetched
+2025-04-13 17:03:44.805 | INFO     | __main__:update_dining_data:137 - Skipping Dinner for 2025-05-05 - already successfully fetched
+2025-04-13 17:03:44.857 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 17:03:44.857 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-05-05
+2025-04-13 17:03:44.857 | INFO     | __main__:update_dining_data:120 - Processing 2025-05-06 for SBISA
+2025-04-13 17:03:48.313 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-05-06
+2025-04-13 17:03:48.314 | INFO     | __main__:update_dining_data:137 - Skipping Breakfast for 2025-05-06 - already successfully fetched
+2025-04-13 17:03:48.314 | INFO     | __main__:update_dining_data:137 - Skipping Lunch for 2025-05-06 - already successfully fetched
+2025-04-13 17:03:48.314 | INFO     | __main__:update_dining_data:137 - Skipping Dinner for 2025-05-06 - already successfully fetched
+2025-04-13 17:03:48.369 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 17:03:48.369 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-05-06
+2025-04-13 17:03:48.370 | INFO     | __main__:update_dining_data:120 - Processing 2025-05-07 for SBISA
+2025-04-13 17:03:50.296 | INFO     | __main__:get_periods:78 - Found 0 periods for 2025-05-07
+2025-04-13 17:03:50.338 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 17:03:50.339 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-05-07
+2025-04-13 17:03:50.339 | INFO     | __main__:update_dining_data:120 - Processing 2025-05-08 for SBISA
+2025-04-13 17:03:52.591 | INFO     | __main__:get_periods:78 - Found 0 periods for 2025-05-08
+2025-04-13 17:03:52.659 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 17:03:52.660 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-05-08
+2025-04-13 17:03:52.660 | INFO     | __main__:update_dining_data:120 - Processing 2025-05-09 for SBISA
+2025-04-13 17:04:09.321 | INFO     | __main__:get_periods:78 - Found 0 periods for 2025-05-09
+2025-04-13 17:04:09.364 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 17:04:09.364 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-05-09
+2025-04-13 17:04:09.364 | INFO     | __main__:update_dining_data:120 - Processing 2025-05-10 for SBISA
+2025-04-13 17:04:10.839 | INFO     | __main__:get_periods:78 - Found 0 periods for 2025-05-10
+2025-04-13 17:04:10.880 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 17:04:10.880 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-05-10
