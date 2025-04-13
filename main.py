@@ -5,6 +5,8 @@ from pathlib import Path
 from loguru import logger
 import time
 
+from check_success import check_success
+
 BASE_URL_SCHEME = "https://api.dineoncampus.com/v1/location/"
 SBISA_LOCATION_ID = "587909deee596f31cedc179c"
 COMMONS_LOCATION_ID = "59972586ee596fe55d2eef75"
@@ -123,10 +125,19 @@ def update_dining_data(location_id: str, start_date: str, days: int = 28):
         if date_str not in data:
             data[date_str] = {}
         
+        # Check if day is already fully successful
+        if data[date_str].get("full_success", False):
+            logger.info(f"Skipping {date_str} - already fully successful")
+            current_date += timedelta(days=1)
+            continue
+        
         try:
             # Get periods for the date
             periods = get_periods(location_id, date_str)
             data[date_str]["periods"] = periods
+
+            # Initialize full_success as True, will be set to False if any location fails
+            data[date_str]["full_success"] = True
             
             # Get menu for each period
             for period_name, period_id in periods.items():
@@ -163,6 +174,17 @@ def update_dining_data(location_id: str, start_date: str, days: int = 28):
                 
                 data[date_str][period_name][location_name]["success"] = True
                 
+            # Check if all locations in all periods are successful
+            for period_name, period_data in data[date_str].items():
+                if period_name == "periods" or period_name == "full_success":
+                    continue
+                for location_name, location_data in period_data.items():
+                    if not location_data.get("success", False):
+                        data[date_str]["full_success"] = False
+                        break
+                if not data[date_str]["full_success"]:
+                    break
+                
             # Save after each successful date to prevent data loss
             save_data(data)
             logger.success(f"Successfully processed {date_str}")
@@ -196,7 +218,17 @@ def print_menu_for_date(date: str):
 if __name__ == "__main__":
     # Update data for the next 28 days
     today = datetime.now().strftime("%Y-%m-%d")
-    update_dining_data(SBISA_LOCATION_ID, today, 28)
+
+    dining_hall = input("Enter SBISA or COMMONS: \n")
+    if dining_hall != "COMMONS" and dining_hall != "SBISA":
+        raise ValueError("Invalid input: Please enter either 'SBISA' or 'COMMONS'")
+    
+    num_days = int(input("Enter the number of days to update: \n"))
+    if num_days <= 0 or num_days >= 100:
+        raise ValueError("Invalid input: Please enter a positive integer less than 100")
+
+    update_dining_data(LOCATION_IDS[dining_hall], today, 28)
+    check_success(load_data())
 
 
 

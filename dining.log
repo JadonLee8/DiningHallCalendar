@@ -413,3 +413,568 @@
 2025-04-13 17:04:10.839 | INFO     | __main__:get_periods:78 - Found 0 periods for 2025-05-10
 2025-04-13 17:04:10.880 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
 2025-04-13 17:04:10.880 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-05-10
+2025-04-13 17:11:09.534 | INFO     | __main__:update_dining_data:116 - Starting update for COMMONS from 2025-04-13 for 28 days
+2025-04-13 17:11:09.535 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-13 for COMMONS
+2025-04-13 17:11:20.852 | WARNING  | __main__:get_periods:82 - Attempt 1 failed: HTTPSConnectionPool(host='api.dineoncampus.com', port=443): Max retries exceeded with url: /v1/location/59972586ee596fe55d2eef75/periods?platform=0&date=2025-04-13 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001BF7A6AE900>: Failed to resolve 'api.dineoncampus.com' ([Errno 11001] getaddrinfo failed)")). Retrying...
+2025-04-13 17:11:24.584 | INFO     | __main__:get_periods:78 - Found 2 periods for 2025-04-13
+2025-04-13 17:11:38.096 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 17:11:38.097 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-04-13
+2025-04-13 17:11:38.097 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-14 for COMMONS
+2025-04-13 17:11:41.035 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-04-14
+2025-04-13 17:11:50.180 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 17:11:50.180 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-04-14
+2025-04-13 17:11:50.180 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-15 for COMMONS
+2025-04-13 17:11:53.738 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-04-15
+2025-04-13 17:12:02.181 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 17:12:02.182 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-04-15
+2025-04-13 17:12:02.182 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-16 for COMMONS
+2025-04-13 17:12:02.772 | WARNING  | __main__:get_periods:82 - Attempt 1 failed: Expecting value: line 1 column 1 (char 0). Retrying...
+2025-04-13 17:12:03.792 | WARNING  | __main__:get_periods:82 - Attempt 2 failed: Expecting value: line 1 column 1 (char 0). Retrying...
+2025-04-13 17:12:04.814 | ERROR    | __main__:get_periods:86 - All 3 attempts failed: Expecting value: line 1 column 1 (char 0)
+2025-04-13 17:12:04.815 | ERROR    | __main__:update_dining_data:171 - Error processing 2025-04-16: Expecting value: line 1 column 1 (char 0)
+2025-04-13 17:12:04.815 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-17 for COMMONS
+2025-04-13 17:12:08.645 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-04-17
+2025-04-13 17:12:18.505 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 17:12:18.505 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-04-17
+2025-04-13 17:12:18.505 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-18 for COMMONS
+2025-04-13 17:12:22.077 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-04-18
+2025-04-13 17:12:39.515 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 17:12:39.517 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-04-18
+2025-04-13 17:12:39.517 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-19 for COMMONS
+2025-04-13 17:12:42.201 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-04-19
+2025-04-13 17:13:26.138 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 17:13:26.139 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-04-19
+2025-04-13 17:13:26.139 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-20 for COMMONS
+2025-04-13 17:13:35.231 | INFO     | __main__:get_periods:78 - Found 2 periods for 2025-04-20
+2025-04-13 17:13:43.488 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 17:13:43.488 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-04-20
+2025-04-13 17:13:43.488 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-21 for COMMONS
+2025-04-13 17:13:48.361 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-04-21
+2025-04-13 17:14:06.065 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 17:14:06.066 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-04-21
+2025-04-13 17:14:06.066 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-22 for COMMONS
+2025-04-13 17:14:10.667 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-04-22
+2025-04-13 17:14:24.347 | WARNING  | __main__:get_menu:101 - Attempt 1 failed: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)). Retrying...
+2025-04-13 17:14:28.137 | WARNING  | __main__:get_menu:101 - Attempt 1 failed: Expecting value: line 1 column 1 (char 0). Retrying...
+2025-04-13 17:14:29.156 | WARNING  | __main__:get_menu:101 - Attempt 2 failed: Expecting value: line 1 column 1 (char 0). Retrying...
+2025-04-13 17:14:30.176 | ERROR    | __main__:get_menu:105 - All 3 attempts failed: Expecting value: line 1 column 1 (char 0)
+2025-04-13 17:14:30.176 | ERROR    | __main__:update_dining_data:171 - Error processing 2025-04-22: Expecting value: line 1 column 1 (char 0)
+2025-04-13 17:14:30.177 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-23 for COMMONS
+2025-04-13 17:14:33.333 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-04-23
+2025-04-13 17:14:42.005 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 17:14:42.006 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-04-23
+2025-04-13 17:14:42.006 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-24 for COMMONS
+2025-04-13 17:14:46.500 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-04-24
+2025-04-13 17:14:49.458 | WARNING  | __main__:get_menu:101 - Attempt 1 failed: Expecting value: line 1 column 1 (char 0). Retrying...
+2025-04-13 17:14:50.480 | WARNING  | __main__:get_menu:101 - Attempt 2 failed: Expecting value: line 1 column 1 (char 0). Retrying...
+2025-04-13 17:14:51.509 | ERROR    | __main__:get_menu:105 - All 3 attempts failed: Expecting value: line 1 column 1 (char 0)
+2025-04-13 17:14:51.510 | ERROR    | __main__:update_dining_data:171 - Error processing 2025-04-24: Expecting value: line 1 column 1 (char 0)
+2025-04-13 17:14:51.510 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-25 for COMMONS
+2025-04-13 17:14:54.641 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-04-25
+2025-04-13 17:15:02.499 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 17:15:02.500 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-04-25
+2025-04-13 17:15:02.500 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-26 for COMMONS
+2025-04-13 17:15:05.398 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-04-26
+2025-04-13 17:15:11.795 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 17:15:11.796 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-04-26
+2025-04-13 17:15:11.796 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-27 for COMMONS
+2025-04-13 17:15:14.529 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-04-27
+2025-04-13 17:15:21.130 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 17:15:21.130 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-04-27
+2025-04-13 17:15:21.131 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-28 for COMMONS
+2025-04-13 17:15:25.309 | INFO     | __main__:get_periods:78 - Found 4 periods for 2025-04-28
+2025-04-13 17:15:35.597 | WARNING  | __main__:get_menu:101 - Attempt 1 failed: Expecting value: line 1 column 1 (char 0). Retrying...
+2025-04-13 17:15:36.618 | WARNING  | __main__:get_menu:101 - Attempt 2 failed: Expecting value: line 1 column 1 (char 0). Retrying...
+2025-04-13 17:15:37.636 | ERROR    | __main__:get_menu:105 - All 3 attempts failed: Expecting value: line 1 column 1 (char 0)
+2025-04-13 17:15:37.636 | ERROR    | __main__:update_dining_data:171 - Error processing 2025-04-28: Expecting value: line 1 column 1 (char 0)
+2025-04-13 17:15:37.636 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-29 for COMMONS
+2025-04-13 17:15:41.189 | INFO     | __main__:get_periods:78 - Found 4 periods for 2025-04-29
+2025-04-13 17:15:51.067 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 17:15:51.068 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-04-29
+2025-04-13 17:15:51.068 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-30 for COMMONS
+2025-04-13 17:15:54.756 | INFO     | __main__:get_periods:78 - Found 4 periods for 2025-04-30
+2025-04-13 17:16:02.735 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 17:16:02.735 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-04-30
+2025-04-13 17:16:02.735 | INFO     | __main__:update_dining_data:120 - Processing 2025-05-01 for COMMONS
+2025-04-13 17:16:06.699 | INFO     | __main__:get_periods:78 - Found 4 periods for 2025-05-01
+2025-04-13 17:16:15.295 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 17:16:15.295 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-05-01
+2025-04-13 17:16:15.295 | INFO     | __main__:update_dining_data:120 - Processing 2025-05-02 for COMMONS
+2025-04-13 17:16:20.142 | INFO     | __main__:get_periods:78 - Found 4 periods for 2025-05-02
+2025-04-13 17:16:22.785 | WARNING  | __main__:get_menu:101 - Attempt 1 failed: Expecting value: line 1 column 1 (char 0). Retrying...
+2025-04-13 17:16:23.847 | WARNING  | __main__:get_menu:101 - Attempt 2 failed: Expecting value: line 1 column 1 (char 0). Retrying...
+2025-04-13 17:16:24.880 | ERROR    | __main__:get_menu:105 - All 3 attempts failed: Expecting value: line 1 column 1 (char 0)
+2025-04-13 17:16:24.880 | ERROR    | __main__:update_dining_data:171 - Error processing 2025-05-02: Expecting value: line 1 column 1 (char 0)
+2025-04-13 17:16:24.880 | INFO     | __main__:update_dining_data:120 - Processing 2025-05-03 for COMMONS
+2025-04-13 17:16:27.497 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-05-03
+2025-04-13 17:16:36.247 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 17:16:36.248 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-05-03
+2025-04-13 17:16:36.248 | INFO     | __main__:update_dining_data:120 - Processing 2025-05-04 for COMMONS
+2025-04-13 17:16:39.405 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-05-04
+2025-04-13 17:16:46.124 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 17:16:46.124 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-05-04
+2025-04-13 17:16:46.124 | INFO     | __main__:update_dining_data:120 - Processing 2025-05-05 for COMMONS
+2025-04-13 17:16:49.165 | WARNING  | __main__:get_periods:82 - Attempt 1 failed: Expecting value: line 1 column 1 (char 0). Retrying...
+2025-04-13 17:16:52.543 | WARNING  | __main__:get_periods:82 - Attempt 2 failed: Expecting value: line 1 column 1 (char 0). Retrying...
+2025-04-13 17:16:54.722 | ERROR    | __main__:get_periods:86 - All 3 attempts failed: Expecting value: line 1 column 1 (char 0)
+2025-04-13 17:16:54.722 | ERROR    | __main__:update_dining_data:171 - Error processing 2025-05-05: Expecting value: line 1 column 1 (char 0)
+2025-04-13 17:16:54.722 | INFO     | __main__:update_dining_data:120 - Processing 2025-05-06 for COMMONS
+2025-04-13 17:16:58.375 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-05-06
+2025-04-13 17:17:09.315 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 17:17:09.315 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-05-06
+2025-04-13 17:17:09.315 | INFO     | __main__:update_dining_data:120 - Processing 2025-05-07 for COMMONS
+2025-04-13 17:17:13.262 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-05-07
+2025-04-13 17:17:22.437 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 17:17:22.438 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-05-07
+2025-04-13 17:17:22.438 | INFO     | __main__:update_dining_data:120 - Processing 2025-05-08 for COMMONS
+2025-04-13 17:17:25.905 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-05-08
+2025-04-13 17:17:33.582 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 17:17:33.582 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-05-08
+2025-04-13 17:17:33.582 | INFO     | __main__:update_dining_data:120 - Processing 2025-05-09 for COMMONS
+2025-04-13 17:17:37.170 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-05-09
+2025-04-13 17:18:03.769 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 17:18:03.769 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-05-09
+2025-04-13 17:18:03.770 | INFO     | __main__:update_dining_data:120 - Processing 2025-05-10 for COMMONS
+2025-04-13 17:18:06.358 | INFO     | __main__:get_periods:78 - Found 0 periods for 2025-05-10
+2025-04-13 17:18:06.463 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 17:18:06.463 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-05-10
+2025-04-13 18:15:29.523 | INFO     | __main__:update_dining_data:116 - Starting update for COMMONS from 2025-04-13 for 28 days
+2025-04-13 18:15:29.524 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-13 for COMMONS
+2025-04-13 18:15:32.718 | INFO     | __main__:get_periods:78 - Found 2 periods for 2025-04-13
+2025-04-13 18:15:32.718 | INFO     | __main__:update_dining_data:137 - Skipping Dinner for 2025-04-13 - already successfully fetched
+2025-04-13 18:15:32.719 | INFO     | __main__:update_dining_data:137 - Skipping Brunch for 2025-04-13 - already successfully fetched
+2025-04-13 18:15:32.790 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 18:15:32.791 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-04-13
+2025-04-13 18:15:32.791 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-14 for COMMONS
+2025-04-13 18:15:34.219 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-04-14
+2025-04-13 18:15:34.219 | INFO     | __main__:update_dining_data:137 - Skipping Breakfast for 2025-04-14 - already successfully fetched
+2025-04-13 18:15:34.220 | INFO     | __main__:update_dining_data:137 - Skipping Lunch for 2025-04-14 - already successfully fetched
+2025-04-13 18:15:34.220 | INFO     | __main__:update_dining_data:137 - Skipping Dinner for 2025-04-14 - already successfully fetched
+2025-04-13 18:15:34.293 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 18:15:34.294 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-04-14
+2025-04-13 18:15:34.294 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-15 for COMMONS
+2025-04-13 18:15:37.775 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-04-15
+2025-04-13 18:15:37.777 | INFO     | __main__:update_dining_data:137 - Skipping Breakfast for 2025-04-15 - already successfully fetched
+2025-04-13 18:15:37.777 | INFO     | __main__:update_dining_data:137 - Skipping Lunch for 2025-04-15 - already successfully fetched
+2025-04-13 18:15:37.778 | INFO     | __main__:update_dining_data:137 - Skipping Dinner for 2025-04-15 - already successfully fetched
+2025-04-13 18:15:37.851 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 18:15:37.852 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-04-15
+2025-04-13 18:15:37.852 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-16 for COMMONS
+2025-04-13 18:15:41.927 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-04-16
+2025-04-13 18:15:48.990 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 18:15:48.990 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-04-16
+2025-04-13 18:15:48.990 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-17 for COMMONS
+2025-04-13 18:15:53.646 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-04-17
+2025-04-13 18:15:53.646 | INFO     | __main__:update_dining_data:137 - Skipping Breakfast for 2025-04-17 - already successfully fetched
+2025-04-13 18:15:53.646 | INFO     | __main__:update_dining_data:137 - Skipping Lunch for 2025-04-17 - already successfully fetched
+2025-04-13 18:15:53.646 | INFO     | __main__:update_dining_data:137 - Skipping Dinner for 2025-04-17 - already successfully fetched
+2025-04-13 18:15:53.722 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 18:15:53.722 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-04-17
+2025-04-13 18:15:53.724 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-18 for COMMONS
+2025-04-13 18:15:57.864 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-04-18
+2025-04-13 18:15:57.864 | INFO     | __main__:update_dining_data:137 - Skipping Breakfast for 2025-04-18 - already successfully fetched
+2025-04-13 18:15:57.864 | INFO     | __main__:update_dining_data:137 - Skipping Lunch for 2025-04-18 - already successfully fetched
+2025-04-13 18:15:57.864 | INFO     | __main__:update_dining_data:137 - Skipping Dinner for 2025-04-18 - already successfully fetched
+2025-04-13 18:15:57.944 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 18:15:57.944 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-04-18
+2025-04-13 18:15:57.944 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-19 for COMMONS
+2025-04-13 18:16:00.712 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-04-19
+2025-04-13 18:16:00.713 | INFO     | __main__:update_dining_data:137 - Skipping Lunch for 2025-04-19 - already successfully fetched
+2025-04-13 18:16:00.713 | INFO     | __main__:update_dining_data:137 - Skipping Dinner for 2025-04-19 - already successfully fetched
+2025-04-13 18:16:00.713 | INFO     | __main__:update_dining_data:137 - Skipping Brunch for 2025-04-19 - already successfully fetched
+2025-04-13 18:16:00.789 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 18:16:00.789 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-04-19
+2025-04-13 18:16:00.789 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-20 for COMMONS
+2025-04-13 18:16:05.211 | INFO     | __main__:get_periods:78 - Found 2 periods for 2025-04-20
+2025-04-13 18:16:05.212 | INFO     | __main__:update_dining_data:137 - Skipping Dinner for 2025-04-20 - already successfully fetched
+2025-04-13 18:16:05.212 | INFO     | __main__:update_dining_data:137 - Skipping Brunch for 2025-04-20 - already successfully fetched
+2025-04-13 18:16:05.287 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 18:16:05.287 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-04-20
+2025-04-13 18:16:05.288 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-21 for COMMONS
+2025-04-13 18:16:08.472 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-04-21
+2025-04-13 18:16:08.472 | INFO     | __main__:update_dining_data:137 - Skipping Breakfast for 2025-04-21 - already successfully fetched
+2025-04-13 18:16:08.472 | INFO     | __main__:update_dining_data:137 - Skipping Lunch for 2025-04-21 - already successfully fetched
+2025-04-13 18:16:08.473 | INFO     | __main__:update_dining_data:137 - Skipping Dinner for 2025-04-21 - already successfully fetched
+2025-04-13 18:16:08.539 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 18:16:08.539 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-04-21
+2025-04-13 18:16:08.539 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-22 for COMMONS
+2025-04-13 18:16:11.784 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-04-22
+2025-04-13 18:16:11.785 | INFO     | __main__:update_dining_data:137 - Skipping Breakfast for 2025-04-22 - already successfully fetched
+2025-04-13 18:16:12.304 | WARNING  | __main__:get_menu:101 - Attempt 1 failed: Expecting value: line 1 column 1 (char 0). Retrying...
+2025-04-13 18:16:13.343 | WARNING  | __main__:get_menu:101 - Attempt 2 failed: Expecting value: line 1 column 1 (char 0). Retrying...
+2025-04-13 18:16:14.366 | ERROR    | __main__:get_menu:105 - All 3 attempts failed: Expecting value: line 1 column 1 (char 0)
+2025-04-13 18:16:14.366 | ERROR    | __main__:update_dining_data:171 - Error processing 2025-04-22: Expecting value: line 1 column 1 (char 0)
+2025-04-13 18:16:14.367 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-23 for COMMONS
+2025-04-13 18:16:17.598 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-04-23
+2025-04-13 18:16:17.598 | INFO     | __main__:update_dining_data:137 - Skipping Breakfast for 2025-04-23 - already successfully fetched
+2025-04-13 18:16:17.599 | INFO     | __main__:update_dining_data:137 - Skipping Lunch for 2025-04-23 - already successfully fetched
+2025-04-13 18:16:17.599 | INFO     | __main__:update_dining_data:137 - Skipping Dinner for 2025-04-23 - already successfully fetched
+2025-04-13 18:16:17.675 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 18:16:17.676 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-04-23
+2025-04-13 18:16:17.676 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-24 for COMMONS
+2025-04-13 18:16:21.967 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-04-24
+2025-04-13 18:16:21.968 | INFO     | __main__:update_dining_data:137 - Skipping Breakfast for 2025-04-24 - already successfully fetched
+2025-04-13 18:16:28.696 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 18:16:28.696 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-04-24
+2025-04-13 18:16:28.696 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-25 for COMMONS
+2025-04-13 18:16:31.918 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-04-25
+2025-04-13 18:16:31.918 | INFO     | __main__:update_dining_data:137 - Skipping Breakfast for 2025-04-25 - already successfully fetched
+2025-04-13 18:16:31.918 | INFO     | __main__:update_dining_data:137 - Skipping Lunch for 2025-04-25 - already successfully fetched
+2025-04-13 18:16:31.919 | INFO     | __main__:update_dining_data:137 - Skipping Dinner for 2025-04-25 - already successfully fetched
+2025-04-13 18:16:31.994 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 18:16:31.994 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-04-25
+2025-04-13 18:16:31.995 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-26 for COMMONS
+2025-04-13 18:16:34.596 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-04-26
+2025-04-13 18:16:34.597 | INFO     | __main__:update_dining_data:137 - Skipping Lunch for 2025-04-26 - already successfully fetched
+2025-04-13 18:16:34.597 | INFO     | __main__:update_dining_data:137 - Skipping Dinner for 2025-04-26 - already successfully fetched
+2025-04-13 18:16:34.598 | INFO     | __main__:update_dining_data:137 - Skipping Brunch for 2025-04-26 - already successfully fetched
+2025-04-13 18:16:34.674 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 18:16:34.674 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-04-26
+2025-04-13 18:16:34.674 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-27 for COMMONS
+2025-04-13 18:16:37.166 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-04-27
+2025-04-13 18:16:37.166 | INFO     | __main__:update_dining_data:137 - Skipping Lunch for 2025-04-27 - already successfully fetched
+2025-04-13 18:16:37.166 | INFO     | __main__:update_dining_data:137 - Skipping Dinner for 2025-04-27 - already successfully fetched
+2025-04-13 18:16:37.166 | INFO     | __main__:update_dining_data:137 - Skipping Brunch for 2025-04-27 - already successfully fetched
+2025-04-13 18:16:37.254 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 18:16:37.254 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-04-27
+2025-04-13 18:16:37.255 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-28 for COMMONS
+2025-04-13 18:16:40.556 | INFO     | __main__:get_periods:78 - Found 4 periods for 2025-04-28
+2025-04-13 18:16:40.556 | INFO     | __main__:update_dining_data:137 - Skipping Breakfast for 2025-04-28 - already successfully fetched
+2025-04-13 18:16:40.556 | INFO     | __main__:update_dining_data:137 - Skipping Lunch for 2025-04-28 - already successfully fetched
+2025-04-13 18:16:40.557 | INFO     | __main__:update_dining_data:137 - Skipping Dinner for 2025-04-28 - already successfully fetched
+2025-04-13 18:16:41.839 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 18:16:41.840 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-04-28
+2025-04-13 18:16:41.840 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-29 for COMMONS
+2025-04-13 18:16:45.191 | INFO     | __main__:get_periods:78 - Found 4 periods for 2025-04-29
+2025-04-13 18:16:45.191 | INFO     | __main__:update_dining_data:137 - Skipping Breakfast for 2025-04-29 - already successfully fetched
+2025-04-13 18:16:45.191 | INFO     | __main__:update_dining_data:137 - Skipping Lunch for 2025-04-29 - already successfully fetched
+2025-04-13 18:16:45.191 | INFO     | __main__:update_dining_data:137 - Skipping Dinner for 2025-04-29 - already successfully fetched
+2025-04-13 18:16:45.191 | INFO     | __main__:update_dining_data:137 - Skipping Brunch for 2025-04-29 - already successfully fetched
+2025-04-13 18:16:45.280 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 18:16:45.280 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-04-29
+2025-04-13 18:16:45.281 | INFO     | __main__:update_dining_data:120 - Processing 2025-04-30 for COMMONS
+2025-04-13 18:16:51.145 | INFO     | __main__:get_periods:78 - Found 4 periods for 2025-04-30
+2025-04-13 18:16:51.145 | INFO     | __main__:update_dining_data:137 - Skipping Breakfast for 2025-04-30 - already successfully fetched
+2025-04-13 18:16:51.145 | INFO     | __main__:update_dining_data:137 - Skipping Lunch for 2025-04-30 - already successfully fetched
+2025-04-13 18:16:51.145 | INFO     | __main__:update_dining_data:137 - Skipping Dinner for 2025-04-30 - already successfully fetched
+2025-04-13 18:16:51.145 | INFO     | __main__:update_dining_data:137 - Skipping Brunch for 2025-04-30 - already successfully fetched
+2025-04-13 18:16:51.223 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 18:16:51.223 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-04-30
+2025-04-13 18:16:51.224 | INFO     | __main__:update_dining_data:120 - Processing 2025-05-01 for COMMONS
+2025-04-13 18:16:54.419 | INFO     | __main__:get_periods:78 - Found 4 periods for 2025-05-01
+2025-04-13 18:16:54.419 | INFO     | __main__:update_dining_data:137 - Skipping Breakfast for 2025-05-01 - already successfully fetched
+2025-04-13 18:16:54.419 | INFO     | __main__:update_dining_data:137 - Skipping Lunch for 2025-05-01 - already successfully fetched
+2025-04-13 18:16:54.419 | INFO     | __main__:update_dining_data:137 - Skipping Dinner for 2025-05-01 - already successfully fetched
+2025-04-13 18:16:54.419 | INFO     | __main__:update_dining_data:137 - Skipping Brunch for 2025-05-01 - already successfully fetched
+2025-04-13 18:16:54.496 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 18:16:54.497 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-05-01
+2025-04-13 18:16:54.497 | INFO     | __main__:update_dining_data:120 - Processing 2025-05-02 for COMMONS
+2025-04-13 18:16:59.718 | INFO     | __main__:get_periods:78 - Found 4 periods for 2025-05-02
+2025-04-13 18:16:59.718 | INFO     | __main__:update_dining_data:137 - Skipping Breakfast for 2025-05-02 - already successfully fetched
+2025-04-13 18:17:03.373 | WARNING  | __main__:get_menu:101 - Attempt 1 failed: Expecting value: line 1 column 1 (char 0). Retrying...
+2025-04-13 18:17:04.393 | WARNING  | __main__:get_menu:101 - Attempt 2 failed: Expecting value: line 1 column 1 (char 0). Retrying...
+2025-04-13 18:17:05.428 | ERROR    | __main__:get_menu:105 - All 3 attempts failed: Expecting value: line 1 column 1 (char 0)
+2025-04-13 18:17:05.429 | ERROR    | __main__:update_dining_data:171 - Error processing 2025-05-02: Expecting value: line 1 column 1 (char 0)
+2025-04-13 18:17:05.429 | INFO     | __main__:update_dining_data:120 - Processing 2025-05-03 for COMMONS
+2025-04-13 18:17:07.961 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-05-03
+2025-04-13 18:17:07.961 | INFO     | __main__:update_dining_data:137 - Skipping Lunch for 2025-05-03 - already successfully fetched
+2025-04-13 18:17:07.961 | INFO     | __main__:update_dining_data:137 - Skipping Dinner for 2025-05-03 - already successfully fetched
+2025-04-13 18:17:07.961 | INFO     | __main__:update_dining_data:137 - Skipping Brunch for 2025-05-03 - already successfully fetched
+2025-04-13 18:17:08.051 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 18:17:08.051 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-05-03
+2025-04-13 18:17:08.051 | INFO     | __main__:update_dining_data:120 - Processing 2025-05-04 for COMMONS
+2025-04-13 18:17:11.503 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-05-04
+2025-04-13 18:17:11.503 | INFO     | __main__:update_dining_data:137 - Skipping Breakfast for 2025-05-04 - already successfully fetched
+2025-04-13 18:17:11.503 | INFO     | __main__:update_dining_data:137 - Skipping Dinner for 2025-05-04 - already successfully fetched
+2025-04-13 18:17:11.503 | INFO     | __main__:update_dining_data:137 - Skipping Brunch for 2025-05-04 - already successfully fetched
+2025-04-13 18:17:11.585 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 18:17:11.586 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-05-04
+2025-04-13 18:17:11.586 | INFO     | __main__:update_dining_data:120 - Processing 2025-05-05 for COMMONS
+2025-04-13 18:17:14.875 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-05-05
+2025-04-13 18:17:24.873 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 18:17:24.873 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-05-05
+2025-04-13 18:17:24.873 | INFO     | __main__:update_dining_data:120 - Processing 2025-05-06 for COMMONS
+2025-04-13 18:17:28.817 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-05-06
+2025-04-13 18:17:28.817 | INFO     | __main__:update_dining_data:137 - Skipping Breakfast for 2025-05-06 - already successfully fetched
+2025-04-13 18:17:28.817 | INFO     | __main__:update_dining_data:137 - Skipping Lunch for 2025-05-06 - already successfully fetched
+2025-04-13 18:17:28.817 | INFO     | __main__:update_dining_data:137 - Skipping Dinner for 2025-05-06 - already successfully fetched
+2025-04-13 18:17:28.902 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 18:17:28.902 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-05-06
+2025-04-13 18:17:28.902 | INFO     | __main__:update_dining_data:120 - Processing 2025-05-07 for COMMONS
+2025-04-13 18:17:32.181 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-05-07
+2025-04-13 18:17:32.181 | INFO     | __main__:update_dining_data:137 - Skipping Breakfast for 2025-05-07 - already successfully fetched
+2025-04-13 18:17:32.182 | INFO     | __main__:update_dining_data:137 - Skipping Lunch for 2025-05-07 - already successfully fetched
+2025-04-13 18:17:32.182 | INFO     | __main__:update_dining_data:137 - Skipping Dinner for 2025-05-07 - already successfully fetched
+2025-04-13 18:17:32.266 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 18:17:32.266 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-05-07
+2025-04-13 18:17:32.267 | INFO     | __main__:update_dining_data:120 - Processing 2025-05-08 for COMMONS
+2025-04-13 18:17:35.574 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-05-08
+2025-04-13 18:17:35.575 | INFO     | __main__:update_dining_data:137 - Skipping Breakfast for 2025-05-08 - already successfully fetched
+2025-04-13 18:17:35.575 | INFO     | __main__:update_dining_data:137 - Skipping Lunch for 2025-05-08 - already successfully fetched
+2025-04-13 18:17:35.575 | INFO     | __main__:update_dining_data:137 - Skipping Dinner for 2025-05-08 - already successfully fetched
+2025-04-13 18:17:35.654 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 18:17:35.654 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-05-08
+2025-04-13 18:17:35.654 | INFO     | __main__:update_dining_data:120 - Processing 2025-05-09 for COMMONS
+2025-04-13 18:17:39.103 | INFO     | __main__:get_periods:78 - Found 3 periods for 2025-05-09
+2025-04-13 18:17:39.104 | INFO     | __main__:update_dining_data:137 - Skipping Breakfast for 2025-05-09 - already successfully fetched
+2025-04-13 18:17:39.104 | INFO     | __main__:update_dining_data:137 - Skipping Lunch for 2025-05-09 - already successfully fetched
+2025-04-13 18:17:39.105 | INFO     | __main__:update_dining_data:137 - Skipping Dinner for 2025-05-09 - already successfully fetched
+2025-04-13 18:17:39.185 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 18:17:39.185 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-05-09
+2025-04-13 18:17:39.185 | INFO     | __main__:update_dining_data:120 - Processing 2025-05-10 for COMMONS
+2025-04-13 18:17:40.588 | INFO     | __main__:get_periods:78 - Found 0 periods for 2025-05-10
+2025-04-13 18:17:40.667 | INFO     | __main__:save_data:61 - Data saved to dining_data.json
+2025-04-13 18:17:40.668 | SUCCESS  | __main__:update_dining_data:168 - Successfully processed 2025-05-10
+2025-04-13 18:34:28.476 | INFO     | __main__:update_dining_data:118 - Starting update for COMMONS from 2025-04-13 for 28 days
+2025-04-13 18:34:28.477 | INFO     | __main__:update_dining_data:122 - Processing 2025-04-13 for COMMONS
+2025-04-13 18:34:31.181 | INFO     | __main__:get_periods:80 - Found 2 periods for 2025-04-13
+2025-04-13 18:34:31.182 | INFO     | __main__:update_dining_data:148 - Skipping Dinner for 2025-04-13 - already successfully fetched
+2025-04-13 18:34:31.182 | INFO     | __main__:update_dining_data:148 - Skipping Brunch for 2025-04-13 - already successfully fetched
+2025-04-13 18:34:31.265 | INFO     | __main__:save_data:63 - Data saved to dining_data.json
+2025-04-13 18:34:31.265 | SUCCESS  | __main__:update_dining_data:190 - Successfully processed 2025-04-13
+2025-04-13 18:34:31.266 | INFO     | __main__:update_dining_data:122 - Processing 2025-04-14 for COMMONS
+2025-04-13 18:34:33.807 | INFO     | __main__:get_periods:80 - Found 3 periods for 2025-04-14
+2025-04-13 18:34:33.808 | INFO     | __main__:update_dining_data:148 - Skipping Breakfast for 2025-04-14 - already successfully fetched
+2025-04-13 18:34:33.808 | INFO     | __main__:update_dining_data:148 - Skipping Lunch for 2025-04-14 - already successfully fetched
+2025-04-13 18:34:33.808 | INFO     | __main__:update_dining_data:148 - Skipping Dinner for 2025-04-14 - already successfully fetched
+2025-04-13 18:34:33.889 | INFO     | __main__:save_data:63 - Data saved to dining_data.json
+2025-04-13 18:34:33.889 | SUCCESS  | __main__:update_dining_data:190 - Successfully processed 2025-04-14
+2025-04-13 18:34:33.889 | INFO     | __main__:update_dining_data:122 - Processing 2025-04-15 for COMMONS
+2025-04-13 18:34:35.333 | INFO     | __main__:get_periods:80 - Found 3 periods for 2025-04-15
+2025-04-13 18:34:35.333 | INFO     | __main__:update_dining_data:148 - Skipping Breakfast for 2025-04-15 - already successfully fetched
+2025-04-13 18:34:35.333 | INFO     | __main__:update_dining_data:148 - Skipping Lunch for 2025-04-15 - already successfully fetched
+2025-04-13 18:34:35.334 | INFO     | __main__:update_dining_data:148 - Skipping Dinner for 2025-04-15 - already successfully fetched
+2025-04-13 18:34:35.417 | INFO     | __main__:save_data:63 - Data saved to dining_data.json
+2025-04-13 18:34:35.418 | SUCCESS  | __main__:update_dining_data:190 - Successfully processed 2025-04-15
+2025-04-13 18:34:35.418 | INFO     | __main__:update_dining_data:122 - Processing 2025-04-16 for COMMONS
+2025-04-13 18:34:37.313 | INFO     | __main__:get_periods:80 - Found 3 periods for 2025-04-16
+2025-04-13 18:34:37.314 | INFO     | __main__:update_dining_data:148 - Skipping Breakfast for 2025-04-16 - already successfully fetched
+2025-04-13 18:34:37.314 | INFO     | __main__:update_dining_data:148 - Skipping Lunch for 2025-04-16 - already successfully fetched
+2025-04-13 18:34:37.314 | INFO     | __main__:update_dining_data:148 - Skipping Dinner for 2025-04-16 - already successfully fetched
+2025-04-13 18:34:37.397 | INFO     | __main__:save_data:63 - Data saved to dining_data.json
+2025-04-13 18:34:37.398 | SUCCESS  | __main__:update_dining_data:190 - Successfully processed 2025-04-16
+2025-04-13 18:34:37.398 | INFO     | __main__:update_dining_data:122 - Processing 2025-04-17 for COMMONS
+2025-04-13 18:34:39.576 | INFO     | __main__:get_periods:80 - Found 3 periods for 2025-04-17
+2025-04-13 18:34:39.576 | INFO     | __main__:update_dining_data:148 - Skipping Breakfast for 2025-04-17 - already successfully fetched
+2025-04-13 18:34:39.576 | INFO     | __main__:update_dining_data:148 - Skipping Lunch for 2025-04-17 - already successfully fetched
+2025-04-13 18:34:39.576 | INFO     | __main__:update_dining_data:148 - Skipping Dinner for 2025-04-17 - already successfully fetched
+2025-04-13 18:34:39.668 | INFO     | __main__:save_data:63 - Data saved to dining_data.json
+2025-04-13 18:34:39.669 | SUCCESS  | __main__:update_dining_data:190 - Successfully processed 2025-04-17
+2025-04-13 18:34:39.669 | INFO     | __main__:update_dining_data:122 - Processing 2025-04-18 for COMMONS
+2025-04-13 18:34:40.072 | WARNING  | __main__:get_periods:84 - Attempt 1 failed: Expecting value: line 1 column 1 (char 0). Retrying...
+2025-04-13 18:34:41.099 | WARNING  | __main__:get_periods:84 - Attempt 2 failed: Expecting value: line 1 column 1 (char 0). Retrying...
+2025-04-13 18:34:42.124 | ERROR    | __main__:get_periods:88 - All 3 attempts failed: Expecting value: line 1 column 1 (char 0)
+2025-04-13 18:34:42.124 | ERROR    | __main__:update_dining_data:193 - Error processing 2025-04-18: Expecting value: line 1 column 1 (char 0)
+2025-04-13 18:34:42.124 | INFO     | __main__:update_dining_data:122 - Processing 2025-04-19 for COMMONS
+2025-04-13 18:34:43.132 | INFO     | __main__:get_periods:80 - Found 3 periods for 2025-04-19
+2025-04-13 18:34:43.132 | INFO     | __main__:update_dining_data:148 - Skipping Lunch for 2025-04-19 - already successfully fetched
+2025-04-13 18:34:43.141 | INFO     | __main__:update_dining_data:148 - Skipping Dinner for 2025-04-19 - already successfully fetched
+2025-04-13 18:34:43.141 | INFO     | __main__:update_dining_data:148 - Skipping Brunch for 2025-04-19 - already successfully fetched
+2025-04-13 18:34:43.224 | INFO     | __main__:save_data:63 - Data saved to dining_data.json
+2025-04-13 18:34:43.225 | SUCCESS  | __main__:update_dining_data:190 - Successfully processed 2025-04-19
+2025-04-13 18:34:43.225 | INFO     | __main__:update_dining_data:122 - Processing 2025-04-20 for COMMONS
+2025-04-13 18:34:47.235 | INFO     | __main__:get_periods:80 - Found 2 periods for 2025-04-20
+2025-04-13 18:34:47.236 | INFO     | __main__:update_dining_data:148 - Skipping Dinner for 2025-04-20 - already successfully fetched
+2025-04-13 18:34:47.236 | INFO     | __main__:update_dining_data:148 - Skipping Brunch for 2025-04-20 - already successfully fetched
+2025-04-13 18:34:47.320 | INFO     | __main__:save_data:63 - Data saved to dining_data.json
+2025-04-13 18:34:47.320 | SUCCESS  | __main__:update_dining_data:190 - Successfully processed 2025-04-20
+2025-04-13 18:34:47.320 | INFO     | __main__:update_dining_data:122 - Processing 2025-04-21 for COMMONS
+2025-04-13 18:34:48.732 | INFO     | __main__:get_periods:80 - Found 3 periods for 2025-04-21
+2025-04-13 18:34:48.732 | INFO     | __main__:update_dining_data:148 - Skipping Breakfast for 2025-04-21 - already successfully fetched
+2025-04-13 18:34:48.732 | INFO     | __main__:update_dining_data:148 - Skipping Lunch for 2025-04-21 - already successfully fetched
+2025-04-13 18:34:48.732 | INFO     | __main__:update_dining_data:148 - Skipping Dinner for 2025-04-21 - already successfully fetched
+2025-04-13 18:34:48.825 | INFO     | __main__:save_data:63 - Data saved to dining_data.json
+2025-04-13 18:34:48.825 | SUCCESS  | __main__:update_dining_data:190 - Successfully processed 2025-04-21
+2025-04-13 18:34:48.826 | INFO     | __main__:update_dining_data:122 - Processing 2025-04-22 for COMMONS
+2025-04-13 18:34:50.169 | INFO     | __main__:get_periods:80 - Found 3 periods for 2025-04-22
+2025-04-13 18:34:50.170 | INFO     | __main__:update_dining_data:148 - Skipping Breakfast for 2025-04-22 - already successfully fetched
+2025-04-13 18:34:55.250 | INFO     | __main__:save_data:63 - Data saved to dining_data.json
+2025-04-13 18:34:55.250 | SUCCESS  | __main__:update_dining_data:190 - Successfully processed 2025-04-22
+2025-04-13 18:34:55.250 | INFO     | __main__:update_dining_data:122 - Processing 2025-04-23 for COMMONS
+2025-04-13 18:34:56.663 | INFO     | __main__:get_periods:80 - Found 3 periods for 2025-04-23
+2025-04-13 18:34:56.664 | INFO     | __main__:update_dining_data:148 - Skipping Breakfast for 2025-04-23 - already successfully fetched
+2025-04-13 18:34:56.664 | INFO     | __main__:update_dining_data:148 - Skipping Lunch for 2025-04-23 - already successfully fetched
+2025-04-13 18:34:56.664 | INFO     | __main__:update_dining_data:148 - Skipping Dinner for 2025-04-23 - already successfully fetched
+2025-04-13 18:34:56.747 | INFO     | __main__:save_data:63 - Data saved to dining_data.json
+2025-04-13 18:34:56.747 | SUCCESS  | __main__:update_dining_data:190 - Successfully processed 2025-04-23
+2025-04-13 18:34:56.748 | INFO     | __main__:update_dining_data:122 - Processing 2025-04-24 for COMMONS
+2025-04-13 18:34:58.053 | INFO     | __main__:get_periods:80 - Found 3 periods for 2025-04-24
+2025-04-13 18:34:58.053 | INFO     | __main__:update_dining_data:148 - Skipping Breakfast for 2025-04-24 - already successfully fetched
+2025-04-13 18:34:58.054 | INFO     | __main__:update_dining_data:148 - Skipping Lunch for 2025-04-24 - already successfully fetched
+2025-04-13 18:34:58.054 | INFO     | __main__:update_dining_data:148 - Skipping Dinner for 2025-04-24 - already successfully fetched
+2025-04-13 18:34:58.144 | INFO     | __main__:save_data:63 - Data saved to dining_data.json
+2025-04-13 18:34:58.145 | SUCCESS  | __main__:update_dining_data:190 - Successfully processed 2025-04-24
+2025-04-13 18:34:58.145 | INFO     | __main__:update_dining_data:122 - Processing 2025-04-25 for COMMONS
+2025-04-13 18:35:00.474 | INFO     | __main__:get_periods:80 - Found 3 periods for 2025-04-25
+2025-04-13 18:35:00.474 | INFO     | __main__:update_dining_data:148 - Skipping Breakfast for 2025-04-25 - already successfully fetched
+2025-04-13 18:35:00.474 | INFO     | __main__:update_dining_data:148 - Skipping Lunch for 2025-04-25 - already successfully fetched
+2025-04-13 18:35:00.475 | INFO     | __main__:update_dining_data:148 - Skipping Dinner for 2025-04-25 - already successfully fetched
+2025-04-13 18:35:00.560 | INFO     | __main__:save_data:63 - Data saved to dining_data.json
+2025-04-13 18:35:00.560 | SUCCESS  | __main__:update_dining_data:190 - Successfully processed 2025-04-25
+2025-04-13 18:35:00.561 | INFO     | __main__:update_dining_data:122 - Processing 2025-04-26 for COMMONS
+2025-04-13 18:35:01.607 | INFO     | __main__:get_periods:80 - Found 3 periods for 2025-04-26
+2025-04-13 18:35:01.608 | INFO     | __main__:update_dining_data:148 - Skipping Lunch for 2025-04-26 - already successfully fetched
+2025-04-13 18:35:01.608 | INFO     | __main__:update_dining_data:148 - Skipping Dinner for 2025-04-26 - already successfully fetched
+2025-04-13 18:35:01.608 | INFO     | __main__:update_dining_data:148 - Skipping Brunch for 2025-04-26 - already successfully fetched
+2025-04-13 18:35:01.692 | INFO     | __main__:save_data:63 - Data saved to dining_data.json
+2025-04-13 18:35:01.692 | SUCCESS  | __main__:update_dining_data:190 - Successfully processed 2025-04-26
+2025-04-13 18:35:01.694 | INFO     | __main__:update_dining_data:122 - Processing 2025-04-27 for COMMONS
+2025-04-13 18:35:02.503 | INFO     | __main__:get_periods:80 - Found 3 periods for 2025-04-27
+2025-04-13 18:35:02.503 | INFO     | __main__:update_dining_data:148 - Skipping Lunch for 2025-04-27 - already successfully fetched
+2025-04-13 18:35:02.503 | INFO     | __main__:update_dining_data:148 - Skipping Dinner for 2025-04-27 - already successfully fetched
+2025-04-13 18:35:02.503 | INFO     | __main__:update_dining_data:148 - Skipping Brunch for 2025-04-27 - already successfully fetched
+2025-04-13 18:35:02.595 | INFO     | __main__:save_data:63 - Data saved to dining_data.json
+2025-04-13 18:35:02.596 | SUCCESS  | __main__:update_dining_data:190 - Successfully processed 2025-04-27
+2025-04-13 18:35:02.596 | INFO     | __main__:update_dining_data:122 - Processing 2025-04-28 for COMMONS
+2025-04-13 18:35:04.383 | INFO     | __main__:get_periods:80 - Found 4 periods for 2025-04-28
+2025-04-13 18:35:04.383 | INFO     | __main__:update_dining_data:148 - Skipping Breakfast for 2025-04-28 - already successfully fetched
+2025-04-13 18:35:04.383 | INFO     | __main__:update_dining_data:148 - Skipping Lunch for 2025-04-28 - already successfully fetched
+2025-04-13 18:35:04.383 | INFO     | __main__:update_dining_data:148 - Skipping Dinner for 2025-04-28 - already successfully fetched
+2025-04-13 18:35:04.383 | INFO     | __main__:update_dining_data:148 - Skipping Brunch for 2025-04-28 - already successfully fetched
+2025-04-13 18:35:04.482 | INFO     | __main__:save_data:63 - Data saved to dining_data.json
+2025-04-13 18:35:04.482 | SUCCESS  | __main__:update_dining_data:190 - Successfully processed 2025-04-28
+2025-04-13 18:35:04.482 | INFO     | __main__:update_dining_data:122 - Processing 2025-04-29 for COMMONS
+2025-04-13 18:35:05.979 | INFO     | __main__:get_periods:80 - Found 4 periods for 2025-04-29
+2025-04-13 18:35:05.981 | INFO     | __main__:update_dining_data:148 - Skipping Breakfast for 2025-04-29 - already successfully fetched
+2025-04-13 18:35:05.981 | INFO     | __main__:update_dining_data:148 - Skipping Lunch for 2025-04-29 - already successfully fetched
+2025-04-13 18:35:05.981 | INFO     | __main__:update_dining_data:148 - Skipping Dinner for 2025-04-29 - already successfully fetched
+2025-04-13 18:35:05.982 | INFO     | __main__:update_dining_data:148 - Skipping Brunch for 2025-04-29 - already successfully fetched
+2025-04-13 18:35:06.081 | INFO     | __main__:save_data:63 - Data saved to dining_data.json
+2025-04-13 18:35:06.081 | SUCCESS  | __main__:update_dining_data:190 - Successfully processed 2025-04-29
+2025-04-13 18:35:06.081 | INFO     | __main__:update_dining_data:122 - Processing 2025-04-30 for COMMONS
+2025-04-13 18:35:07.708 | INFO     | __main__:get_periods:80 - Found 4 periods for 2025-04-30
+2025-04-13 18:35:07.709 | INFO     | __main__:update_dining_data:148 - Skipping Breakfast for 2025-04-30 - already successfully fetched
+2025-04-13 18:35:07.709 | INFO     | __main__:update_dining_data:148 - Skipping Lunch for 2025-04-30 - already successfully fetched
+2025-04-13 18:35:07.709 | INFO     | __main__:update_dining_data:148 - Skipping Dinner for 2025-04-30 - already successfully fetched
+2025-04-13 18:35:07.709 | INFO     | __main__:update_dining_data:148 - Skipping Brunch for 2025-04-30 - already successfully fetched
+2025-04-13 18:35:07.808 | INFO     | __main__:save_data:63 - Data saved to dining_data.json
+2025-04-13 18:35:07.808 | SUCCESS  | __main__:update_dining_data:190 - Successfully processed 2025-04-30
+2025-04-13 18:35:07.808 | INFO     | __main__:update_dining_data:122 - Processing 2025-05-01 for COMMONS
+2025-04-13 18:35:09.726 | INFO     | __main__:get_periods:80 - Found 4 periods for 2025-05-01
+2025-04-13 18:35:09.726 | INFO     | __main__:update_dining_data:148 - Skipping Breakfast for 2025-05-01 - already successfully fetched
+2025-04-13 18:35:09.727 | INFO     | __main__:update_dining_data:148 - Skipping Lunch for 2025-05-01 - already successfully fetched
+2025-04-13 18:35:09.727 | INFO     | __main__:update_dining_data:148 - Skipping Dinner for 2025-05-01 - already successfully fetched
+2025-04-13 18:35:09.727 | INFO     | __main__:update_dining_data:148 - Skipping Brunch for 2025-05-01 - already successfully fetched
+2025-04-13 18:35:09.836 | INFO     | __main__:save_data:63 - Data saved to dining_data.json
+2025-04-13 18:35:09.836 | SUCCESS  | __main__:update_dining_data:190 - Successfully processed 2025-05-01
+2025-04-13 18:35:09.836 | INFO     | __main__:update_dining_data:122 - Processing 2025-05-02 for COMMONS
+2025-04-13 18:35:11.112 | INFO     | __main__:get_periods:80 - Found 4 periods for 2025-05-02
+2025-04-13 18:35:11.112 | INFO     | __main__:update_dining_data:148 - Skipping Breakfast for 2025-05-02 - already successfully fetched
+2025-04-13 18:35:11.112 | INFO     | __main__:update_dining_data:148 - Skipping Lunch for 2025-05-02 - already successfully fetched
+2025-04-13 18:35:14.455 | INFO     | __main__:save_data:63 - Data saved to dining_data.json
+2025-04-13 18:35:14.455 | SUCCESS  | __main__:update_dining_data:190 - Successfully processed 2025-05-02
+2025-04-13 18:35:14.456 | INFO     | __main__:update_dining_data:122 - Processing 2025-05-03 for COMMONS
+2025-04-13 18:35:15.397 | INFO     | __main__:get_periods:80 - Found 3 periods for 2025-05-03
+2025-04-13 18:35:15.398 | INFO     | __main__:update_dining_data:148 - Skipping Lunch for 2025-05-03 - already successfully fetched
+2025-04-13 18:35:15.398 | INFO     | __main__:update_dining_data:148 - Skipping Dinner for 2025-05-03 - already successfully fetched
+2025-04-13 18:35:15.398 | INFO     | __main__:update_dining_data:148 - Skipping Brunch for 2025-05-03 - already successfully fetched
+2025-04-13 18:35:15.524 | INFO     | __main__:save_data:63 - Data saved to dining_data.json
+2025-04-13 18:35:15.525 | SUCCESS  | __main__:update_dining_data:190 - Successfully processed 2025-05-03
+2025-04-13 18:35:15.525 | INFO     | __main__:update_dining_data:122 - Processing 2025-05-04 for COMMONS
+2025-04-13 18:35:16.597 | INFO     | __main__:get_periods:80 - Found 3 periods for 2025-05-04
+2025-04-13 18:35:16.598 | INFO     | __main__:update_dining_data:148 - Skipping Breakfast for 2025-05-04 - already successfully fetched
+2025-04-13 18:35:16.598 | INFO     | __main__:update_dining_data:148 - Skipping Dinner for 2025-05-04 - already successfully fetched
+2025-04-13 18:35:16.598 | INFO     | __main__:update_dining_data:148 - Skipping Brunch for 2025-05-04 - already successfully fetched
+2025-04-13 18:35:16.756 | INFO     | __main__:save_data:63 - Data saved to dining_data.json
+2025-04-13 18:35:16.775 | SUCCESS  | __main__:update_dining_data:190 - Successfully processed 2025-05-04
+2025-04-13 18:35:16.778 | INFO     | __main__:update_dining_data:122 - Processing 2025-05-05 for COMMONS
+2025-04-13 18:35:18.935 | INFO     | __main__:get_periods:80 - Found 3 periods for 2025-05-05
+2025-04-13 18:35:18.935 | INFO     | __main__:update_dining_data:148 - Skipping Breakfast for 2025-05-05 - already successfully fetched
+2025-04-13 18:35:18.935 | INFO     | __main__:update_dining_data:148 - Skipping Lunch for 2025-05-05 - already successfully fetched
+2025-04-13 18:35:18.935 | INFO     | __main__:update_dining_data:148 - Skipping Dinner for 2025-05-05 - already successfully fetched
+2025-04-13 18:35:19.087 | INFO     | __main__:save_data:63 - Data saved to dining_data.json
+2025-04-13 18:35:19.088 | SUCCESS  | __main__:update_dining_data:190 - Successfully processed 2025-05-05
+2025-04-13 18:35:19.089 | INFO     | __main__:update_dining_data:122 - Processing 2025-05-06 for COMMONS
+2025-04-13 18:35:20.676 | INFO     | __main__:get_periods:80 - Found 3 periods for 2025-05-06
+2025-04-13 18:35:20.677 | INFO     | __main__:update_dining_data:148 - Skipping Breakfast for 2025-05-06 - already successfully fetched
+2025-04-13 18:35:20.677 | INFO     | __main__:update_dining_data:148 - Skipping Lunch for 2025-05-06 - already successfully fetched
+2025-04-13 18:35:20.677 | INFO     | __main__:update_dining_data:148 - Skipping Dinner for 2025-05-06 - already successfully fetched
+2025-04-13 18:35:20.818 | INFO     | __main__:save_data:63 - Data saved to dining_data.json
+2025-04-13 18:35:20.818 | SUCCESS  | __main__:update_dining_data:190 - Successfully processed 2025-05-06
+2025-04-13 18:35:20.819 | INFO     | __main__:update_dining_data:122 - Processing 2025-05-07 for COMMONS
+2025-04-13 18:35:22.498 | INFO     | __main__:get_periods:80 - Found 3 periods for 2025-05-07
+2025-04-13 18:35:22.498 | INFO     | __main__:update_dining_data:148 - Skipping Breakfast for 2025-05-07 - already successfully fetched
+2025-04-13 18:35:22.500 | INFO     | __main__:update_dining_data:148 - Skipping Lunch for 2025-05-07 - already successfully fetched
+2025-04-13 18:35:22.500 | INFO     | __main__:update_dining_data:148 - Skipping Dinner for 2025-05-07 - already successfully fetched
+2025-04-13 18:35:22.617 | INFO     | __main__:save_data:63 - Data saved to dining_data.json
+2025-04-13 18:35:22.618 | SUCCESS  | __main__:update_dining_data:190 - Successfully processed 2025-05-07
+2025-04-13 18:35:22.618 | INFO     | __main__:update_dining_data:122 - Processing 2025-05-08 for COMMONS
+2025-04-13 18:35:24.434 | INFO     | __main__:get_periods:80 - Found 3 periods for 2025-05-08
+2025-04-13 18:35:24.435 | INFO     | __main__:update_dining_data:148 - Skipping Breakfast for 2025-05-08 - already successfully fetched
+2025-04-13 18:35:24.435 | INFO     | __main__:update_dining_data:148 - Skipping Lunch for 2025-05-08 - already successfully fetched
+2025-04-13 18:35:24.435 | INFO     | __main__:update_dining_data:148 - Skipping Dinner for 2025-05-08 - already successfully fetched
+2025-04-13 18:35:24.550 | INFO     | __main__:save_data:63 - Data saved to dining_data.json
+2025-04-13 18:35:24.550 | SUCCESS  | __main__:update_dining_data:190 - Successfully processed 2025-05-08
+2025-04-13 18:35:24.550 | INFO     | __main__:update_dining_data:122 - Processing 2025-05-09 for COMMONS
+2025-04-13 18:35:25.948 | INFO     | __main__:get_periods:80 - Found 3 periods for 2025-05-09
+2025-04-13 18:35:25.948 | INFO     | __main__:update_dining_data:148 - Skipping Breakfast for 2025-05-09 - already successfully fetched
+2025-04-13 18:35:25.948 | INFO     | __main__:update_dining_data:148 - Skipping Lunch for 2025-05-09 - already successfully fetched
+2025-04-13 18:35:25.949 | INFO     | __main__:update_dining_data:148 - Skipping Dinner for 2025-05-09 - already successfully fetched
+2025-04-13 18:35:26.044 | INFO     | __main__:save_data:63 - Data saved to dining_data.json
+2025-04-13 18:35:26.044 | SUCCESS  | __main__:update_dining_data:190 - Successfully processed 2025-05-09
+2025-04-13 18:35:26.044 | INFO     | __main__:update_dining_data:122 - Processing 2025-05-10 for COMMONS
+2025-04-13 18:35:27.383 | INFO     | __main__:get_periods:80 - Found 0 periods for 2025-05-10
+2025-04-13 18:35:27.507 | INFO     | __main__:save_data:63 - Data saved to dining_data.json
+2025-04-13 18:35:27.507 | SUCCESS  | __main__:update_dining_data:190 - Successfully processed 2025-05-10
+2025-04-13 18:38:18.269 | INFO     | __main__:update_dining_data:118 - Starting update for COMMONS from 2025-04-13 for 28 days
+2025-04-13 18:38:18.270 | INFO     | __main__:update_dining_data:122 - Processing 2025-04-13 for COMMONS
+2025-04-13 18:38:18.270 | INFO     | __main__:update_dining_data:130 - Skipping 2025-04-13 - already fully successful
+2025-04-13 18:38:18.270 | INFO     | __main__:update_dining_data:122 - Processing 2025-04-14 for COMMONS
+2025-04-13 18:38:18.270 | INFO     | __main__:update_dining_data:130 - Skipping 2025-04-14 - already fully successful
+2025-04-13 18:38:18.272 | INFO     | __main__:update_dining_data:122 - Processing 2025-04-15 for COMMONS
+2025-04-13 18:38:18.272 | INFO     | __main__:update_dining_data:130 - Skipping 2025-04-15 - already fully successful
+2025-04-13 18:38:18.272 | INFO     | __main__:update_dining_data:122 - Processing 2025-04-16 for COMMONS
+2025-04-13 18:38:18.272 | INFO     | __main__:update_dining_data:130 - Skipping 2025-04-16 - already fully successful
+2025-04-13 18:38:18.272 | INFO     | __main__:update_dining_data:122 - Processing 2025-04-17 for COMMONS
+2025-04-13 18:38:18.272 | INFO     | __main__:update_dining_data:130 - Skipping 2025-04-17 - already fully successful
+2025-04-13 18:38:18.273 | INFO     | __main__:update_dining_data:122 - Processing 2025-04-18 for COMMONS
+2025-04-13 18:38:20.162 | INFO     | __main__:get_periods:80 - Found 3 periods for 2025-04-18
+2025-04-13 18:38:20.162 | INFO     | __main__:update_dining_data:148 - Skipping Breakfast for 2025-04-18 - already successfully fetched
+2025-04-13 18:38:20.163 | INFO     | __main__:update_dining_data:148 - Skipping Lunch for 2025-04-18 - already successfully fetched
+2025-04-13 18:38:20.163 | INFO     | __main__:update_dining_data:148 - Skipping Dinner for 2025-04-18 - already successfully fetched
+2025-04-13 18:38:20.245 | INFO     | __main__:save_data:63 - Data saved to dining_data.json
+2025-04-13 18:38:20.246 | SUCCESS  | __main__:update_dining_data:190 - Successfully processed 2025-04-18
+2025-04-13 18:38:20.246 | INFO     | __main__:update_dining_data:122 - Processing 2025-04-19 for COMMONS
+2025-04-13 18:38:20.246 | INFO     | __main__:update_dining_data:130 - Skipping 2025-04-19 - already fully successful
+2025-04-13 18:38:20.246 | INFO     | __main__:update_dining_data:122 - Processing 2025-04-20 for COMMONS
+2025-04-13 18:38:20.246 | INFO     | __main__:update_dining_data:130 - Skipping 2025-04-20 - already fully successful
+2025-04-13 18:38:20.248 | INFO     | __main__:update_dining_data:122 - Processing 2025-04-21 for COMMONS
+2025-04-13 18:38:20.248 | INFO     | __main__:update_dining_data:130 - Skipping 2025-04-21 - already fully successful
+2025-04-13 18:38:20.248 | INFO     | __main__:update_dining_data:122 - Processing 2025-04-22 for COMMONS
+2025-04-13 18:38:20.248 | INFO     | __main__:update_dining_data:130 - Skipping 2025-04-22 - already fully successful
+2025-04-13 18:38:20.248 | INFO     | __main__:update_dining_data:122 - Processing 2025-04-23 for COMMONS
+2025-04-13 18:38:20.248 | INFO     | __main__:update_dining_data:130 - Skipping 2025-04-23 - already fully successful
+2025-04-13 18:38:20.248 | INFO     | __main__:update_dining_data:122 - Processing 2025-04-24 for COMMONS
+2025-04-13 18:38:20.248 | INFO     | __main__:update_dining_data:130 - Skipping 2025-04-24 - already fully successful
+2025-04-13 18:38:20.248 | INFO     | __main__:update_dining_data:122 - Processing 2025-04-25 for COMMONS
+2025-04-13 18:38:20.249 | INFO     | __main__:update_dining_data:130 - Skipping 2025-04-25 - already fully successful
+2025-04-13 18:38:20.249 | INFO     | __main__:update_dining_data:122 - Processing 2025-04-26 for COMMONS
+2025-04-13 18:38:20.249 | INFO     | __main__:update_dining_data:130 - Skipping 2025-04-26 - already fully successful
+2025-04-13 18:38:20.249 | INFO     | __main__:update_dining_data:122 - Processing 2025-04-27 for COMMONS
+2025-04-13 18:38:20.249 | INFO     | __main__:update_dining_data:130 - Skipping 2025-04-27 - already fully successful
+2025-04-13 18:38:20.249 | INFO     | __main__:update_dining_data:122 - Processing 2025-04-28 for COMMONS
+2025-04-13 18:38:20.249 | INFO     | __main__:update_dining_data:130 - Skipping 2025-04-28 - already fully successful
+2025-04-13 18:38:20.251 | INFO     | __main__:update_dining_data:122 - Processing 2025-04-29 for COMMONS
+2025-04-13 18:38:20.251 | INFO     | __main__:update_dining_data:130 - Skipping 2025-04-29 - already fully successful
+2025-04-13 18:38:20.251 | INFO     | __main__:update_dining_data:122 - Processing 2025-04-30 for COMMONS
+2025-04-13 18:38:20.251 | INFO     | __main__:update_dining_data:130 - Skipping 2025-04-30 - already fully successful
+2025-04-13 18:38:20.251 | INFO     | __main__:update_dining_data:122 - Processing 2025-05-01 for COMMONS
+2025-04-13 18:38:20.251 | INFO     | __main__:update_dining_data:130 - Skipping 2025-05-01 - already fully successful
+2025-04-13 18:38:20.251 | INFO     | __main__:update_dining_data:122 - Processing 2025-05-02 for COMMONS
+2025-04-13 18:38:20.251 | INFO     | __main__:update_dining_data:130 - Skipping 2025-05-02 - already fully successful
+2025-04-13 18:38:20.252 | INFO     | __main__:update_dining_data:122 - Processing 2025-05-03 for COMMONS
+2025-04-13 18:38:20.252 | INFO     | __main__:update_dining_data:130 - Skipping 2025-05-03 - already fully successful
+2025-04-13 18:38:20.252 | INFO     | __main__:update_dining_data:122 - Processing 2025-05-04 for COMMONS
+2025-04-13 18:38:20.253 | INFO     | __main__:update_dining_data:130 - Skipping 2025-05-04 - already fully successful
+2025-04-13 18:38:20.253 | INFO     | __main__:update_dining_data:122 - Processing 2025-05-05 for COMMONS
+2025-04-13 18:38:20.253 | INFO     | __main__:update_dining_data:130 - Skipping 2025-05-05 - already fully successful
+2025-04-13 18:38:20.253 | INFO     | __main__:update_dining_data:122 - Processing 2025-05-06 for COMMONS
+2025-04-13 18:38:20.253 | INFO     | __main__:update_dining_data:130 - Skipping 2025-05-06 - already fully successful
+2025-04-13 18:38:20.254 | INFO     | __main__:update_dining_data:122 - Processing 2025-05-07 for COMMONS
+2025-04-13 18:38:20.254 | INFO     | __main__:update_dining_data:130 - Skipping 2025-05-07 - already fully successful
+2025-04-13 18:38:20.254 | INFO     | __main__:update_dining_data:122 - Processing 2025-05-08 for COMMONS
+2025-04-13 18:38:20.254 | INFO     | __main__:update_dining_data:130 - Skipping 2025-05-08 - already fully successful
+2025-04-13 18:38:20.254 | INFO     | __main__:update_dining_data:122 - Processing 2025-05-09 for COMMONS
+2025-04-13 18:38:20.255 | INFO     | __main__:update_dining_data:130 - Skipping 2025-05-09 - already fully successful
+2025-04-13 18:38:20.255 | INFO     | __main__:update_dining_data:122 - Processing 2025-05-10 for COMMONS
+2025-04-13 18:38:20.255 | INFO     | __main__:update_dining_data:130 - Skipping 2025-05-10 - already fully successful

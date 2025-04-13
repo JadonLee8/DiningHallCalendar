@@ -1,13 +1,10 @@
-from main import load_data
 
-
-if __name__ == "__main__":
+def check_success(data : dict):
     total = 0
     failed = 0
-    data = load_data()
     for date, date_data in data.items():
         for period, period_data in date_data.items():
-            if period == "periods":
+            if period == "periods" or period == "full_success":
                 continue
             for location, location_data in period_data.items():
                 if not location_data["success"]:
@@ -15,5 +12,7 @@ if __name__ == "__main__":
                 total += 1
     print(f"Total: {total}, Failed: {failed}")
     print(f"Failed rate: {failed/total}")
+
+
 
 
